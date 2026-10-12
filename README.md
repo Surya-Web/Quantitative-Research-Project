@@ -125,7 +125,9 @@ Paper citations and method references appear in the corresponding notebooks. Thi
 Verified on October 11, 2026 using Python 3.13 and the versions in `requirements.txt`:
 
 - All nine notebooks executed successfully; downloaders used their default offline modes.
+- All 136 code cells passed syntax checks. Spelling, Markdown tables, local notebook links, comments, and chart presentation were reviewed; the documented Donchian sizing cap now matches the existing 100% code setting.
 - Saved notebook outputs contain no Python/pandas warnings, errors, or machine-specific filesystem addresses.
+- The final text and formatting cleanup preserved executable strategy logic, all 834 bundled input files, and all 439 CSV exports. Chart files and output manifests were also validated.
 - Checksums verified for 718 USDT candle partitions, 55 cap-evidence files, and 25 reviewed event archives. The original CMC input files were unchanged.
 - The final reference exports 625 daily Validation coin-target rows. Its funded account starts with 100,000 USDT in cash after allocation fitting, and the same Validation dates and gross-exposure limit apply to all fixed-allocation comparisons.
 - Current source fingerprints match the five strategy manifests that record them. No obsolete experiment output directories or excluded legacy programs remain in the upload folder.

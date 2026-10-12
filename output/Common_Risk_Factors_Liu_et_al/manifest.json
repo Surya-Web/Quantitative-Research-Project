@@ -1322,7 +1322,7 @@
     "\u5e01\u5b89\u4eba\u751fUSDT": "493c691422163605a06eca7611a0860f5cf68e0d848325dbc3e91a9e93cc0972",
     "\u725b\u6765USDT": "89444d663ee9cd39604535161d83c0c2228e7f658a5e033398a9613de3d8ee00"
   },
-  "notebook_source_sha256": "30edc0cb72d05ae923b9b516d17e6939135e51a9a83ca42a4e214f1d7765b1d8",
+  "notebook_source_sha256": "2b11656bfecff0826112c71f418031de6e0c12be3be5794733b798629c4cf5dc",
   "engine_version": 6,
   "event_policy": "first daily close after announcement; reviewed LUNA uses first minute bar after 1-minute reaction delay before halt",
   "luna_identity_source": "https://www.binance.com/en-IN/support/announcement/detail/d044a6742e484b77a170111460b0eed3",
