@@ -1,0 +1,7 @@
+Period,Weighting,Dates,Active holding dates,Flat / warm-up dates,Active (%)
+Backtest,Equal-weighted,1460,1436,24,98.35616438356163
+Backtest,Value-weighted,1460,1436,24,98.35616438356163
+Backtest,Equal-weighted (m=60),1460,1412,48,96.7123287671233
+Validation,Equal-weighted,625,625,0,100.0
+Validation,Value-weighted,625,625,0,100.0
+Validation,Equal-weighted (m=60),625,625,0,100.0

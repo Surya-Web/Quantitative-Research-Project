@@ -1,0 +1,9 @@
+Period,Weighting,Basis,Difference,Mean daily (%),HAC t-stat,HAC p-value
+Backtest,Equal-weighted,gross,Low minus high volume reversal,-0.10738046957189493,-0.9799000761743045,0.3273006152839366
+Backtest,Equal-weighted,net,Low minus high volume reversal,-0.1291893757179398,-1.2049247905035938,0.22843100889674872
+Backtest,Value-weighted,gross,Low minus high volume reversal,-0.3378813037492487,-2.4395289561667988,0.014826852169786017
+Backtest,Value-weighted,net,Low minus high volume reversal,-0.36045491563833765,-2.6319847097439784,0.008579796418023764
+Validation,Equal-weighted,gross,Low minus high volume reversal,0.028855246039436316,0.20193737258024055,0.8400314999372525
+Validation,Equal-weighted,net,Low minus high volume reversal,0.014480547113002338,0.10217384491124891,0.9186515117731214
+Validation,Value-weighted,gross,Low minus high volume reversal,0.09874618653314123,0.5941662420922578,0.5526162734001121
+Validation,Value-weighted,net,Low minus high volume reversal,0.06852175546839263,0.4163120269385507,0.6773248438019976

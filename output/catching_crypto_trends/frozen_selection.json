@@ -1,0 +1,15 @@
+{
+  "selected_strategy": "rotating_30_LO_20_T20_R0",
+  "selected_specification": {
+    "direction": "LO",
+    "model": "20",
+    "scope": "rotating",
+    "breadth": 30,
+    "asset": null,
+    "threshold": 0.2,
+    "rank_start": 0
+  },
+  "selection_criterion": "Backtest net Sharpe, ties lower turnover then declared order",
+  "candidate_count": 40,
+  "backtest_last_date": "2024-12-31"
+}

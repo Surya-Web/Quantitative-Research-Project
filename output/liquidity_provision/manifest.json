@@ -1,0 +1,93 @@
+{
+  "specification": {
+    "study": "bianchi_fixed_universe_conditional_reversal",
+    "specification_version": 5,
+    "sample_start": "2021-01-01",
+    "sample_end": "2026-09-17",
+    "assets": [
+      "AAVE-USD",
+      "ADA-USD",
+      "ALGO-USD",
+      "ATOM-USD",
+      "AVAX-USD",
+      "BCH-USD",
+      "BNB-USD",
+      "BTC-USD",
+      "CRV-USD",
+      "DOGE-USD",
+      "DOT-USD",
+      "ETC-USD",
+      "ETH-USD",
+      "FIL-USD",
+      "HBAR-USD",
+      "INJ-USD",
+      "LINK-USD",
+      "LTC-USD",
+      "MANA-USD",
+      "MKR-USD",
+      "NEAR-USD",
+      "RUNE-USD",
+      "SAND-USD",
+      "SOL-USD",
+      "THETA-USD",
+      "TRX-USD",
+      "UNI-USD",
+      "VET-USD",
+      "XLM-USD",
+      "XRP-USD"
+    ],
+    "backtest_start": "2021-01-02",
+    "backtest_end": "2024-12-31",
+    "validation_start": "2025-01-01",
+    "validation_end": "2026-09-17",
+    "backtest_dates": 1460,
+    "validation_dates": 625,
+    "primary_input": "crypto_30_coin_daily_ohlcv.csv",
+    "market_cap_input": "crypto_30_coin_daily_market_cap_supply.csv",
+    "volume_window": 30,
+    "volume_window_robustness": 60,
+    "signal_timing": "return_over_day_t_and_volume_shock_at_t_formed_at_close_t_holdings_earn_t_to_t_plus_1",
+    "signal_timing_source": "paper_eq2_y_t_plus_1_on_contemporaneous_y_t_and_v_t",
+    "signal_timing_sensitivities": {
+      "skip": "Skip-day aligned: r(t-1), v(t-1)",
+      "hybrid": "Legacy hybrid (v4): r(t-1), v(t)"
+    },
+    "volume_baseline": "log_arithmetic_mean_of_prior_raw_volume",
+    "volume_standardization": "sample_std_of_prior_log_volume",
+    "volume_window_min_valid_fraction": 0.8,
+    "sort": "return_terciles_on_return_signal_then_within_return_volume_terciles_on_volume_shock",
+    "weightings": [
+      "equal",
+      "value"
+    ],
+    "gross_exposure": 2.0,
+    "net_exposure": 0.0,
+    "min_valid_assets_to_trade": 9,
+    "wash_trade_filter": "volume_to_market_cap_ratio_above_1_masked_per_coin_day_not_pair_level",
+    "statistics_sample": "active_holding_or_trading_dates_only",
+    "cost_bps_per_asset_dollar": 20,
+    "cost_model": "actual_notional_with_weight_drift_and_post_fee_targets",
+    "segment_accounts": "independent_cash_start_and_final_liquidation",
+    "invalid_signal_policy": "per_asset_exclusion_from_that_days_sort_not_universe_wide_flatten",
+    "backtest_start_policy": "fixed_declared_70_30_split",
+    "input_sha256": {
+      "crypto_30_coin_daily_ohlcv.csv": "9cafef5935bb06669045d8fd3060ca9cc3f8a46ff3489c73912bb0d25c6ada6f",
+      "crypto_30_coin_daily_market_cap_supply.csv": "2efe48d13b898eb964bab00cdab4b8d5654c26d30cc89e1c8fa24caf5829ea3d"
+    }
+  },
+  "environment": {
+    "python": "3.13.13",
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "statsmodels": "0.14.6"
+  },
+  "notebook_source_sha256": "9e8559c8031ea367355d109c9a124918b9e1eff53c4af3c0e7a311e6526d7a2f",
+  "figure_names": [
+    "strategy_train_validation_sharpe",
+    "backtest_performance",
+    "validation_performance",
+    "calendar_returns",
+    "volume_window_robustness"
+  ],
+  "validation_previously_explored": true
+}

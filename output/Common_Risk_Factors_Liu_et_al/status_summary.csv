@@ -1,0 +1,9 @@
+Experiment,Period,Costs,Status,Accounts
+binance_matched_cap,Backtest,gross,complete,9
+binance_matched_cap,Backtest,net,complete,9
+binance_matched_cap,Validation,gross,complete,9
+binance_matched_cap,Validation,net,complete,9
+cmc_30_cap,Backtest,gross,complete,9
+cmc_30_cap,Backtest,net,complete,9
+cmc_30_cap,Validation,gross,complete,9
+cmc_30_cap,Validation,net,complete,9

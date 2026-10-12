@@ -1,0 +1,50 @@
+{
+  "base_cost_bps": 20,
+  "extra_slippage_bps": 10,
+  "annual_short_borrow_assumption": 0.05,
+  "borrow_basis": "Beginning-of-day external net short market value, simple annual rate / 365",
+  "slippage_basis": "Absolute external traded notional, including entry and liquidation",
+  "target_policy": "Replay main simulation's dated target weights; resize from cost-adjusted actual NAV",
+  "selection_refit": false,
+  "periods": {
+    "Validation": [
+      "2025-01-01",
+      "2026-09-17"
+    ]
+  },
+  "summary": [
+    {
+      "Period": "Validation",
+      "Scenario": "20 bps baseline",
+      "Final NAV": 117082.61442409593,
+      "CAGR (%)": 9.647710633296436,
+      "Sharpe": 1.2579067711355707,
+      "Max drawdown (%)": -6.5146500775850384,
+      "Trading fees": 12562.925391450835,
+      "Slippage": 0.0,
+      "Borrowing": 0.0
+    },
+    {
+      "Period": "Validation",
+      "Scenario": "+10 bps slippage",
+      "Final NAV": 110698.74712481057,
+      "CAGR (%)": 6.115625918198653,
+      "Sharpe": 0.8246056227989901,
+      "Max drawdown (%)": -7.687929731381004,
+      "Trading fees": 12206.647286266865,
+      "Slippage": 6103.323643133433,
+      "Borrowing": 0.0
+    },
+    {
+      "Period": "Validation",
+      "Scenario": "+10 bps slippage +5% borrow",
+      "Final NAV": 109532.96928531093,
+      "CAGR (%)": 5.461561848536922,
+      "Sharpe": 0.7426271509202077,
+      "Max drawdown (%)": -8.01591453325219,
+      "Trading fees": 12140.526425909802,
+      "Slippage": 6070.263212954901,
+      "Borrowing": 1144.6711141201122
+    }
+  ]
+}

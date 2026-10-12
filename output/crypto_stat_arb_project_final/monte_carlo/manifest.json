@@ -1,0 +1,168 @@
+{
+  "method": "Circular stationary bootstrap; geometric block lengths",
+  "primary_block_days": 20,
+  "paths_per_column": 25000,
+  "horizon_days": 625,
+  "initial_capital_usdt": 100000.0,
+  "annualization_days": 365,
+  "cash_daily_return": 0.0,
+  "batch_size": 100,
+  "fan_sample_paths": 2000,
+  "fan_quantiles": [
+    0.05,
+    0.25,
+    0.5,
+    0.75,
+    0.95
+  ],
+  "sources": [
+    {
+      "source": "Validation retrospective",
+      "start": "2025-01-01",
+      "end": "2026-09-17",
+      "observations": 625,
+      "seed": 20272007,
+      "columns_in_npz_order": [
+        [
+          "20 bps baseline",
+          "Optimized reference"
+        ],
+        [
+          "+10 bps slippage",
+          "Optimized reference"
+        ],
+        [
+          "+10 bps slippage +5% borrow",
+          "Optimized reference"
+        ],
+        [
+          "20 bps baseline",
+          "Equal strategy weights"
+        ],
+        [
+          "+10 bps slippage",
+          "Equal strategy weights"
+        ],
+        [
+          "+10 bps slippage +5% borrow",
+          "Equal strategy weights"
+        ],
+        [
+          "20 bps baseline",
+          "Equal family weights"
+        ],
+        [
+          "+10 bps slippage",
+          "Equal family weights"
+        ],
+        [
+          "+10 bps slippage +5% borrow",
+          "Equal family weights"
+        ],
+        [
+          "20 bps baseline",
+          "Inverse volatility"
+        ],
+        [
+          "+10 bps slippage",
+          "Inverse volatility"
+        ],
+        [
+          "+10 bps slippage +5% borrow",
+          "Inverse volatility"
+        ],
+        [
+          "20 bps baseline",
+          "Reference with BTC hedge"
+        ],
+        [
+          "+10 bps slippage",
+          "Reference with BTC hedge"
+        ],
+        [
+          "+10 bps slippage +5% borrow",
+          "Reference with BTC hedge"
+        ]
+      ],
+      "return_csv_sha256": "45aa55e03dd1024c792ebab9e2ba1ea01e8e5f5516b44b494a9ca695f4fa8151"
+    },
+    {
+      "source": "Walk-forward retrospective",
+      "start": "2023-01-02",
+      "end": "2026-09-17",
+      "observations": 1355,
+      "seed": 20273007,
+      "columns_in_npz_order": [
+        [
+          "20 bps baseline",
+          "Optimized reference"
+        ],
+        [
+          "+10 bps slippage",
+          "Optimized reference"
+        ],
+        [
+          "+10 bps slippage +5% borrow",
+          "Optimized reference"
+        ],
+        [
+          "20 bps baseline",
+          "Equal strategy weights"
+        ],
+        [
+          "+10 bps slippage",
+          "Equal strategy weights"
+        ],
+        [
+          "+10 bps slippage +5% borrow",
+          "Equal strategy weights"
+        ],
+        [
+          "20 bps baseline",
+          "Equal family weights"
+        ],
+        [
+          "+10 bps slippage",
+          "Equal family weights"
+        ],
+        [
+          "+10 bps slippage +5% borrow",
+          "Equal family weights"
+        ],
+        [
+          "20 bps baseline",
+          "Inverse volatility"
+        ],
+        [
+          "+10 bps slippage",
+          "Inverse volatility"
+        ],
+        [
+          "+10 bps slippage +5% borrow",
+          "Inverse volatility"
+        ]
+      ],
+      "return_csv_sha256": "4387ad30c405ed41c81b88065afa95df603b915609f76358a4f0b75315db8fcf"
+    }
+  ],
+  "costs": "Net account returns already include the scenario costs; no second deduction",
+  "pairing": "Identical sampled dates across all portfolios/cost scenarios within each source",
+  "scope": "Conditional return-path resampling; no refit, asset-price simulation or strategy selection",
+  "sensitivity": {
+    "expected_block_days": [
+      10,
+      20,
+      40
+    ],
+    "paths": 5000,
+    "methods": [
+      "Optimized reference"
+    ],
+    "scenario": "+10 bps slippage +5% borrow"
+  },
+  "boundary_treatment": "Observed cash-start and terminal-liquidation days are sampled as ordinary net-return observations",
+  "path_metrics_npz_axes": [
+    "path",
+    "portfolio/scenario in source column order"
+  ]
+}

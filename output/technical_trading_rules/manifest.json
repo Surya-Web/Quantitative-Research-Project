@@ -1,0 +1,111 @@
+{
+  "run_id": "f8284a26c12a",
+  "specification": {
+    "study": "grobys_vma_rules",
+    "assets": [
+      "AAVE-USD",
+      "ADA-USD",
+      "ALGO-USD",
+      "ATOM-USD",
+      "AVAX-USD",
+      "BCH-USD",
+      "BNB-USD",
+      "BTC-USD",
+      "CRV-USD",
+      "DOGE-USD",
+      "DOT-USD",
+      "ETC-USD",
+      "ETH-USD",
+      "FIL-USD",
+      "HBAR-USD",
+      "INJ-USD",
+      "LINK-USD",
+      "LTC-USD",
+      "MANA-USD",
+      "MKR-USD",
+      "NEAR-USD",
+      "RUNE-USD",
+      "SAND-USD",
+      "SOL-USD",
+      "THETA-USD",
+      "TRX-USD",
+      "UNI-USD",
+      "VET-USD",
+      "XLM-USD",
+      "XRP-USD"
+    ],
+    "lookbacks": [
+      20,
+      50,
+      100,
+      150,
+      200
+    ],
+    "short_average": 1,
+    "logarithm": "natural",
+    "signal": "log close > inclusive trailing mean log close; next daily return",
+    "sample_start": "2021-01-01",
+    "sample_end": "2026-09-17",
+    "calendar_convention": "explicit boundaries matching Catching Crypto",
+    "split": {
+      "Backtest": {
+        "start": "2021-01-02",
+        "end": "2024-12-31",
+        "dates": 1460
+      },
+      "Validation": {
+        "start": "2025-01-01",
+        "end": "2026-09-17",
+        "dates": 625
+      }
+    },
+    "primary_warmup": 200,
+    "sensitivity": "native horizon, same return calendar",
+    "portfolio": "30 equally funded independent coin/cash sleeves; no cross-sleeve rebalancing",
+    "cost_bps_per_side": 20,
+    "entry": "post-fee asset value cash/(1+cost)",
+    "cash_yield": 0,
+    "final_liquidation": true,
+    "primary_benchmark": "matched-start static buy and hold",
+    "HAC_lags": 7,
+    "BTC_regression_HAC_lags": 20,
+    "multiplicity": "Holm across 5 horizons; individual tests across 150 coin-horizon pairs",
+    "selection": {
+      "strategy": "VMA_20",
+      "criterion": "Highest backtest cross-coin annual mean natural-log return, net 20 bps, common warm-up",
+      "tie_break": "Lower turnover, then shorter lookback",
+      "author_reference": "VMA_20",
+      "backtest_gross_winner": "VMA_20",
+      "backtest_end": "2024-12-31",
+      "candidates": [
+        "VMA_20",
+        "VMA_50",
+        "VMA_100",
+        "VMA_150",
+        "VMA_200"
+      ]
+    },
+    "input_sha256": {
+      "crypto_30_coin_daily_ohlcv.csv": "9cafef5935bb06669045d8fd3060ca9cc3f8a46ff3489c73912bb0d25c6ada6f"
+    }
+  },
+  "checks_passed": 5,
+  "figures": [
+    "signal_walkthrough",
+    "horizon_comparison",
+    "turnover_and_duration",
+    "excess_return_inference",
+    "coin_excess_heatmap",
+    "backtest_performance",
+    "validation_performance",
+    "backtest_validation",
+    "calendar_returns"
+  ],
+  "environment": {
+    "python": "3.13.13",
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "statsmodels": "0.14.6"
+  },
+  "notebook_source_sha256": "0db41c3e93b617bd196ba29e4e5943e3ffcae891d99f0987acc9428de7201a88"
+}

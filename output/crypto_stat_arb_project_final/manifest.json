@@ -1,0 +1,161 @@
+{
+  "standalone_run": "output/crypto_stat_arb_project_final/standalone",
+  "diagnostic_calendar_start": "2021-01-02",
+  "funded_portfolio_start": "2025-01-01",
+  "fit_period": [
+    "2021-01-02",
+    "2024-12-31"
+  ],
+  "validation_refit": false,
+  "annualization": 365,
+  "annual_risk_free": 0.0,
+  "models": 17,
+  "strategy_labels": [
+    "Liu 30 / 3w",
+    "Liu extended / 3w",
+    "Donchian B5 / 30d",
+    "Donchian B5 / 60d",
+    "Donchian B5 / 90d",
+    "ETC/VET",
+    "AAVE/XLM"
+  ],
+  "comparison": "Fixed-weight blend of funded standalone returns; no extra overlay costs or coin netting",
+  "source_score_files": {},
+  "pair_fit_source_hashes": {
+    "output/palazzi_pairs/manifest.json": "783982dcc9ead6c0ca3380f612947b962bd9c2946677a29ffa8117ad725df61f",
+    "output/palazzi_pairs/backtest_leaderboard.csv": "20e7d10f7a57d98d46855faade23f497555b3ca05307a1da01800f5f347dd548"
+  },
+  "pair_parameters": [
+    {
+      "pair": "ETC/VET",
+      "lookback": 291,
+      "minimum_fit_observations": 365,
+      "backtest_calibration": "Expanding history, refit at each month start using prior month end",
+      "validation_fit_end": "2024-12-31",
+      "stop": "Trailing drawdown of gross-normalized cumulative log-price changes",
+      "intercept": 4.913670822080397,
+      "hedge_beta": 0.51397465451696,
+      "volatility_anchor": 0.03468562626481835
+    },
+    {
+      "pair": "AAVE/XLM",
+      "lookback": 217,
+      "minimum_fit_observations": 365,
+      "backtest_calibration": "Expanding history, refit at each month start using prior month end",
+      "validation_fit_end": "2024-12-31",
+      "stop": "Trailing drawdown of gross-normalized cumulative log-price changes",
+      "intercept": 6.708868421522806,
+      "hedge_beta": 1.001390500378965,
+      "volatility_anchor": 0.04365292235822804
+    }
+  ],
+  "charts": [
+    "common_calendar_gross_net_sharpes",
+    "all_models_sharpe_comparison",
+    "selected_validation_performance",
+    "single_account_validation_performance",
+    "additional_trading_costs"
+  ],
+  "final_selection": {
+    "model": "All seven / measured correlations",
+    "weights": {
+      "Liu 30 / 3w": 0.0,
+      "Liu extended / 3w": 0.07971798727179136,
+      "Donchian B5 / 30d": 0.0,
+      "Donchian B5 / 60d": 0.0,
+      "Donchian B5 / 90d": 0.5428793381744137,
+      "ETC/VET": 0.19669087105874294,
+      "AAVE/XLM": 0.18071180349505192
+    },
+    "criterion": "Highest positive allocation-fit-window Sharpe among executable nonnegative combinations",
+    "validation_screen_used": false,
+    "coefficients_fit_period": [
+      "2021-01-02",
+      "2024-12-31"
+    ],
+    "allocation_fit_sharpe": 0.8023733417432007,
+    "signal_history_start": "2021-01-01",
+    "retention_threshold": 0.5,
+    "retention": 1.5764245666862389,
+    "tie_rule": "Declared order for Backtest Sharpes within 1e-6",
+    "backtest_sharpe": 0.8023733417432005,
+    "validation_sharpe": 1.2648810475781143,
+    "candidate_count": 17,
+    "eligible_training_count": 16,
+    "gross_exposure": "Sum of sleeve gross exposures before coin-level offsets",
+    "accounting": "Fixed-weight blend of funded standalone returns; no extra overlay costs or coin netting"
+  },
+  "single_account": {
+    "folder": "single_account",
+    "summary": [
+      {
+        "Run": "Validation",
+        "Initial capital (USDT)": 100000.0,
+        "Final capital (USDT)": 117082.61442409593,
+        "Profit (USDT)": 17082.614424095926,
+        "Trading fees (USDT)": 12562.925391450835,
+        "Total return (%)": 17.082614424095755,
+        "CAGR (%)": 9.647710633296436,
+        "Sharpe": 1.2579067711355707,
+        "Max drawdown (%)": -6.5146500775850384
+      }
+    ],
+    "validation_used_for_selection": false,
+    "allocation_fit_period": [
+      "2021-01-02",
+      "2024-12-31"
+    ],
+    "cash_start": "2025-01-01",
+    "validation_only": true
+  },
+  "additional_costs": {
+    "base_cost_bps": 20,
+    "extra_slippage_bps": 10,
+    "annual_short_borrow_assumption": 0.05,
+    "borrow_basis": "Beginning-of-day external net short market value, simple annual rate / 365",
+    "slippage_basis": "Absolute external traded notional, including entry and liquidation",
+    "target_policy": "Replay main simulation's dated target weights; resize from cost-adjusted actual NAV",
+    "selection_refit": false,
+    "periods": {
+      "Validation": [
+        "2025-01-01",
+        "2026-09-17"
+      ]
+    },
+    "summary": [
+      {
+        "Period": "Validation",
+        "Scenario": "20 bps baseline",
+        "Final NAV": 117082.61442409593,
+        "CAGR (%)": 9.647710633296436,
+        "Sharpe": 1.2579067711355707,
+        "Max drawdown (%)": -6.5146500775850384,
+        "Trading fees": 12562.925391450835,
+        "Slippage": 0.0,
+        "Borrowing": 0.0
+      },
+      {
+        "Period": "Validation",
+        "Scenario": "+10 bps slippage",
+        "Final NAV": 110698.74712481057,
+        "CAGR (%)": 6.115625918198653,
+        "Sharpe": 0.8246056227989901,
+        "Max drawdown (%)": -7.687929731381004,
+        "Trading fees": 12206.647286266865,
+        "Slippage": 6103.323643133433,
+        "Borrowing": 0.0
+      },
+      {
+        "Period": "Validation",
+        "Scenario": "+10 bps slippage +5% borrow",
+        "Final NAV": 109532.96928531093,
+        "CAGR (%)": 5.461561848536922,
+        "Sharpe": 0.7426271509202077,
+        "Max drawdown (%)": -8.01591453325219,
+        "Trading fees": 12140.526425909802,
+        "Slippage": 6070.263212954901,
+        "Borrowing": 1144.6711141201122
+      }
+    ]
+  }
+}

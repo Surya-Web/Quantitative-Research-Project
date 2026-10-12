@@ -1,0 +1,12 @@
+{
+  "strategy": "MOM_CPL_RW",
+  "criterion": "Median net weekly Sharpe over all 7 schedules, 30-observation burn-in",
+  "candidates": [
+    "MOM_CS_EW",
+    "MOM_CS_RW",
+    "MOM_CPL_EW",
+    "MOM_CPL_RW"
+  ],
+  "representative_weekday": "Monday, fixed",
+  "backtest_end": "2024-12-31"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2022-05-10",
+    "archive": "LUNAUSDT-1m-2022-05-10.zip",
+    "source_url": "https://data.binance.vision/data/spot/daily/klines/LUNAUSDT/1m/LUNAUSDT-1m-2022-05-10.zip",
+    "sha256": "98388fc493e8515576f2fdf184e24f5d7231d3971b57d867acde76374e405dc9",
+    "checksum_source_url": "https://data.binance.vision/data/spot/daily/klines/LUNAUSDT/1m/LUNAUSDT-1m-2022-05-10.zip.CHECKSUM",
+    "rows": 1440
+  },
+  {
+    "date": "2022-05-11",
+    "archive": "LUNAUSDT-1m-2022-05-11.zip",
+    "source_url": "https://data.binance.vision/data/spot/daily/klines/LUNAUSDT/1m/LUNAUSDT-1m-2022-05-11.zip",
+    "sha256": "4bf9ec1c986a7bd5895bdc9937ad1ba1d7295478797171b017fade41b5d74257",
+    "checksum_source_url": "https://data.binance.vision/data/spot/daily/klines/LUNAUSDT/1m/LUNAUSDT-1m-2022-05-11.zip.CHECKSUM",
+    "rows": 1440
+  },
+  {
+    "date": "2022-05-12",
+    "archive": "LUNAUSDT-1m-2022-05-12.zip",
+    "source_url": "https://data.binance.vision/data/spot/daily/klines/LUNAUSDT/1m/LUNAUSDT-1m-2022-05-12.zip",
+    "sha256": "dd427b6844ac894a4af89dafba742b123af3709359e4a7d7d982c4cede301ab7",
+    "checksum_source_url": "https://data.binance.vision/data/spot/daily/klines/LUNAUSDT/1m/LUNAUSDT-1m-2022-05-12.zip.CHECKSUM",
+    "rows": 1440
+  },
+  {
+    "date": "2022-05-13",
+    "archive": "LUNAUSDT-1m-2022-05-13.zip",
+    "source_url": "https://data.binance.vision/data/spot/daily/klines/LUNAUSDT/1m/LUNAUSDT-1m-2022-05-13.zip",
+    "sha256": "b3e67cd58c4da5348234ef983bf52795fdf8dedb1bfd45485cea4c90dd5c48c4",
+    "checksum_source_url": "https://data.binance.vision/data/spot/daily/klines/LUNAUSDT/1m/LUNAUSDT-1m-2022-05-13.zip.CHECKSUM",
+    "rows": 40
+  }
+]

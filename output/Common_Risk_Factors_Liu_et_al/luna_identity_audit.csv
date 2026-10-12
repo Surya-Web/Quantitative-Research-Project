@@ -1,0 +1,3 @@
+instrument,exchange_symbol,identity,last_trading_timestamp,source_url,first_full_daily_bar
+LUNA_CLASSIC_USDT,LUNAUSDT,"Terra Classic, old LUNA",2022-05-13 00:40:00,https://www.binance.com/en-IN/support/announcement/detail/d044a6742e484b77a170111460b0eed3,
+LUNAUSDT,LUNAUSDT,Terra 2.0,,https://www.binance.com/en-IN/support/announcement/detail/d044a6742e484b77a170111460b0eed3,2022-06-01

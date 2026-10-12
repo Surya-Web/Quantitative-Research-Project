@@ -1,0 +1,170 @@
+[
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09",
+    "archive": "NBTUSDT-1d-2022-09.zip",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09.zip",
+    "sha256": "9e0e6927b3775e64180a15d6105afb4e414a9d696a5dc62712f937f8790b391f"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1h",
+    "period": "2022-09",
+    "archive": "NBTUSDT-1h-2022-09.zip",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/NBTUSDT/1h/NBTUSDT-1h-2022-09.zip",
+    "sha256": "f80d13e5a8ca047b5cecd37d4a4aff53cabee30790bf542beb4cf9f33d5e2c2c"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-12",
+    "archive": "NBTUSDT-1d-2022-09-12.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-12.zip",
+    "sha256": "8d16ce028351c2a41cb67d696261b561c5ba8cffc3041d4cb0285bc79a012096"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-30",
+    "archive": "NBTUSDT-1d-2022-09-30.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-30.zip",
+    "sha256": "6c2af19bbc7c9b04af4ea1e91477d8e0178f35edfe3be1be63cfa3a22a2213e3"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-13",
+    "archive": "NBTUSDT-1d-2022-09-13.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-13.zip",
+    "sha256": "24313e3d44574713151812c361d104bff6abce4e605cfe88b7f13259b295be39"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-14",
+    "archive": "NBTUSDT-1d-2022-09-14.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-14.zip",
+    "sha256": "b3d09495fd83dbdd2f6e12faf8bd593b5f42f33fe0d116343a068d275ea8e65a"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-15",
+    "archive": "NBTUSDT-1d-2022-09-15.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-15.zip",
+    "sha256": "9dc58ad33fc0cac71489a21771f70eebc8e98329c282869fad65d79fd1f4c490"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-16",
+    "archive": "NBTUSDT-1d-2022-09-16.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-16.zip",
+    "sha256": "14c2b4628a6f8b406bdb47f34bb5e751f45dc7459c12020ce2eac09b6eda75d9"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-17",
+    "archive": "NBTUSDT-1d-2022-09-17.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-17.zip",
+    "sha256": "2cc000203052328afdf506c1c51a1d594987e911d4a62d451c0840f6c48101a1"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-18",
+    "archive": "NBTUSDT-1d-2022-09-18.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-18.zip",
+    "sha256": "114e8c71ebaf64fe6991796f9a782940ebf23674e239831a8679bc24849809b1"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-19",
+    "archive": "NBTUSDT-1d-2022-09-19.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-19.zip",
+    "sha256": "de4fcaf8dcb55f583de7962fcadd5db92c1afce691ecaab2401e8933ba189294"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-20",
+    "archive": "NBTUSDT-1d-2022-09-20.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-20.zip",
+    "sha256": "f93649a79581d0b37b267e2817910e2dcc26930a674c977eb2bb2e09849273d8"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-21",
+    "archive": "NBTUSDT-1d-2022-09-21.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-21.zip",
+    "sha256": "23e0373b1e1e3776b3674053964b7dad80a1f7cc95f42e74da081748d7fc48dd"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-22",
+    "archive": "NBTUSDT-1d-2022-09-22.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-22.zip",
+    "sha256": "2701ec0445647d44deccd64ab0475467db15b9eb37f2c024229dbfa144006d31"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-23",
+    "archive": "NBTUSDT-1d-2022-09-23.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-23.zip",
+    "sha256": "f2f3502aa5ba1d4251abaf2a9657bed64bbaa436827a68766f2eceff4a2e7955"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-24",
+    "archive": "NBTUSDT-1d-2022-09-24.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-24.zip",
+    "sha256": "2e1f756f6b36af029d7428cfd063f9ac5251950ecc831bb02a5aeb8812722ac8"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-25",
+    "archive": "NBTUSDT-1d-2022-09-25.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-25.zip",
+    "sha256": "4e3a872c8804caeec56aed0ab8b12cc0e5dfe33dfba137ab1777214502fa9011"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-26",
+    "archive": "NBTUSDT-1d-2022-09-26.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-26.zip",
+    "sha256": "6b28c8d304a70dd73f5421b647e1275ef7278943fb835b4f453fbeb1eabf8d7a"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-27",
+    "archive": "NBTUSDT-1d-2022-09-27.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-27.zip",
+    "sha256": "8e83387dcd53cac9b1c81b21d4b7e82c51bfab93faa235719a3a1fa50d86bce3"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-28",
+    "archive": "NBTUSDT-1d-2022-09-28.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-28.zip",
+    "sha256": "12f8f04301134a21771318c9b5353d77f5009bf6a0d5fc039fa9106d8b531900"
+  },
+  {
+    "symbol": "NBTUSDT",
+    "interval": "1d",
+    "period": "2022-09-29",
+    "archive": "NBTUSDT-1d-2022-09-29.zip",
+    "url": "https://data.binance.vision/data/spot/daily/klines/NBTUSDT/1d/NBTUSDT-1d-2022-09-29.zip",
+    "sha256": "f16a74844090dbf46a543951952671d3725d03975e0bba0a0407d5e73ed0bcc2"
+  }
+]

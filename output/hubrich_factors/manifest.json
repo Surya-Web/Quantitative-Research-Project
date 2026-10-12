@@ -1,0 +1,108 @@
+{
+  "specification": {
+    "study": "hubrich_fixed_universe_momentum",
+    "assets": [
+      "AAVE-USD",
+      "ADA-USD",
+      "ALGO-USD",
+      "ATOM-USD",
+      "AVAX-USD",
+      "BCH-USD",
+      "BNB-USD",
+      "BTC-USD",
+      "CRV-USD",
+      "DOGE-USD",
+      "DOT-USD",
+      "ETC-USD",
+      "ETH-USD",
+      "FIL-USD",
+      "HBAR-USD",
+      "INJ-USD",
+      "LINK-USD",
+      "LTC-USD",
+      "MANA-USD",
+      "MKR-USD",
+      "NEAR-USD",
+      "RUNE-USD",
+      "SAND-USD",
+      "SOL-USD",
+      "THETA-USD",
+      "TRX-USD",
+      "UNI-USD",
+      "VET-USD",
+      "XLM-USD",
+      "XRP-USD"
+    ],
+    "sample_start": "2021-01-01",
+    "sample_end": "2026-09-17",
+    "backtest_start": "2021-01-02",
+    "backtest_end": "2024-12-31",
+    "validation_start": "2025-01-01",
+    "validation_end": "2026-09-17",
+    "backtest_dates": 1460,
+    "validation_dates": 625,
+    "primary_input": "crypto_30_coin_daily_ohlcv.csv",
+    "supplemental_input": "crypto_30_coin_daily_market_cap_supply.csv",
+    "lookback": 7,
+    "burn_ins": [
+      30,
+      90
+    ],
+    "standardization": "separate prior-only longitudinal Complete score and same-date cross-sectional z-score of raw momentum",
+    "risk_weighting": "score divided by prior expanding std of overlapping 7-day returns",
+    "factor_gross": 0.1,
+    "benchmark_exposure": 0.1,
+    "weekly_schedules": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat",
+      "Sun"
+    ],
+    "representative_weekday": 0,
+    "cost_bps": 20,
+    "hac_lags": 20,
+    "accounting": "actual units held between weekly trades; post-fee targets; segment final liquidation",
+    "selection": {
+      "strategy": "MOM_CPL_RW",
+      "criterion": "Median net weekly Sharpe over all 7 schedules, 30-observation burn-in",
+      "candidates": [
+        "MOM_CS_EW",
+        "MOM_CS_RW",
+        "MOM_CPL_EW",
+        "MOM_CPL_RW"
+      ],
+      "representative_weekday": "Monday, fixed",
+      "backtest_end": "2024-12-31"
+    },
+    "paper_faithful_core": [
+      "momentum",
+      "BM_EW",
+      "BM_CW",
+      "BM_RW"
+    ],
+    "input_sha256": {
+      "crypto_30_coin_daily_ohlcv.csv": "9cafef5935bb06669045d8fd3060ca9cc3f8a46ff3489c73912bb0d25c6ada6f",
+      "crypto_30_coin_daily_market_cap_supply.csv": "2efe48d13b898eb964bab00cdab4b8d5654c26d30cc89e1c8fa24caf5829ea3d"
+    }
+  },
+  "figure_names": [
+    "momentum_walkthrough",
+    "factor_comparison",
+    "weekly_schedule_sensitivity",
+    "momentum_alpha",
+    "backtest_performance",
+    "validation_performance",
+    "strategy_train_validation_sharpe",
+    "calendar_returns"
+  ],
+  "environment": {
+    "python": "3.13.13",
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "statsmodels": "0.14.6"
+  },
+  "notebook_source_sha256": "0fce300b9e6171a8d7db5c08b06cb35dea1f3d0bfa549d3f712dc59c4fb25faf"
+}

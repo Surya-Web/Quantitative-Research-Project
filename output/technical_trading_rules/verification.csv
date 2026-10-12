@@ -1,0 +1,6 @@
+,Check,Result
+0,Fixed 30 coins and reference calendar,PASS
+1,"Log-price moving averages, binary states and common warm-up",PASS
+2,Future observations cannot change earlier decisions,PASS
+3,"Fixed units, exact entry/exit costs and cash retention",PASS
+4,Gross sleeve payoffs and investable portfolio aggregation,PASS

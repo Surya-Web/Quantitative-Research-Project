@@ -1,0 +1,4 @@
+Strategy,Backtest Sharpe,Validation Sharpe,Sharpe change,Primary paper strategy
+High-volume reversal,-3.222479907692318,-4.215972060323971,-0.9934921526316534,False
+Low-volume reversal,-5.742998130961252,-6.098263556628065,-0.3552654256668131,True
+Middle-volume reversal,-4.4092026010258785,-6.234683197495953,-1.8254805964700749,False

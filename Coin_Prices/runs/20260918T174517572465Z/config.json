@@ -1,0 +1,19 @@
+{
+  "ROOT": "Coin_Prices",
+  "START": "2021-01-01",
+  "END_EXCLUSIVE": "2026-09-18",
+  "INTERVAL": "1d",
+  "QUOTES": null,
+  "SYMBOLS": null,
+  "FETCH_CURRENT_METADATA": false,
+  "PAIR_OVERRIDES": {},
+  "REQUEST_PAUSE_SECONDS": 0.05,
+  "RECHECK_ARCHIVES": false,
+  "CAP_SOURCE": "coinmetrics",
+  "REFRESH_CAPS": true,
+  "SUGGEST_MARKET_CAP_IDS": false,
+  "MAKE_PLOTS": true,
+  "SHOW_PLOTS": true,
+  "RESEARCH_QUOTE": "USDT",
+  "ENGINE_SHA256": "d6b8bcd3c75043bb8bed4625f7230e3f6b4b0a5dc33cbd82ac17ef2a4f6eab0a"
+}

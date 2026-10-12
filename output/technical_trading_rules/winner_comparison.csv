@@ -1,0 +1,25 @@
+Period,Warm-up,Basis,Criterion,Best observed rule,Best observed value,Author 20-day rank
+Backtest,common,gross,Cross-coin annual mean log (%),VMA_20,28.141392826445923,1
+Backtest,common,gross,Portfolio CAGR (%),VMA_20,52.157664756924824,1
+Backtest,common,gross,Portfolio Sharpe,VMA_20,1.1973483205447875,1
+Backtest,common,net,Cross-coin annual mean log (%),VMA_20,21.26471699086836,1
+Backtest,common,net,Portfolio CAGR (%),VMA_20,43.02847298954147,1
+Backtest,common,net,Portfolio Sharpe,VMA_20,1.0507454322500904,1
+Backtest,native,gross,Cross-coin annual mean log (%),VMA_20,41.226350693714664,1
+Backtest,native,gross,Portfolio CAGR (%),VMA_20,84.47018185614823,1
+Backtest,native,gross,Portfolio Sharpe,VMA_20,1.472932476266288,1
+Backtest,native,net,Cross-coin annual mean log (%),VMA_20,33.283006769244814,1
+Backtest,native,net,Portfolio CAGR (%),VMA_20,71.1195215390664,1
+Backtest,native,net,Portfolio Sharpe,VMA_20,1.3234820687891506,1
+Validation,common,gross,Cross-coin annual mean log (%),VMA_100,-22.322877886771956,5
+Validation,common,gross,Portfolio CAGR (%),VMA_50,-13.638433710078413,5
+Validation,common,gross,Portfolio Sharpe,VMA_50,-0.3175359237431591,5
+Validation,common,net,Cross-coin annual mean log (%),VMA_100,-25.749015788294017,5
+Validation,common,net,Portfolio CAGR (%),VMA_100,-17.336885530190614,5
+Validation,common,net,Portfolio Sharpe,VMA_100,-0.4252832192953851,5
+Validation,native,gross,Cross-coin annual mean log (%),VMA_100,-22.322877886771956,5
+Validation,native,gross,Portfolio CAGR (%),VMA_50,-13.638433710078413,5
+Validation,native,gross,Portfolio Sharpe,VMA_50,-0.3175359237431591,5
+Validation,native,net,Cross-coin annual mean log (%),VMA_100,-25.749015788294017,5
+Validation,native,net,Portfolio CAGR (%),VMA_100,-17.336885530190614,5
+Validation,native,net,Portfolio Sharpe,VMA_100,-0.4252832192953851,5

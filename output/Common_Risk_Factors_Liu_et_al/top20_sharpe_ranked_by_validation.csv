@@ -1,0 +1,19 @@
+Experiment,Strategy,Rank,Backtest,Validation,Backtest status,Validation status
+binance_matched_cap,mom_3w,1,0.2571835145171485,1.0497102521905637,complete,complete
+binance_matched_cap,mom_4w,2,-0.04986335504815374,1.0038496909970605,complete,complete
+cmc_30_cap,mom_3w,3,0.1231379641771905,0.7523097866448673,complete,complete
+binance_matched_cap,mom_2w,4,-0.22161103309878497,0.5506325905753888,complete,complete
+cmc_30_cap,mom_2w,5,0.0036832055289570454,0.1387224834682661,complete,complete
+binance_matched_cap,mom_1w,6,0.07220960317387642,-0.27603340000727233,complete,complete
+cmc_30_cap,mom_4w,7,-0.2739117402829372,-0.5300554562614233,complete,complete
+cmc_30_cap,max_price,8,1.049799327107309,-1.0316779650426242,complete,complete
+binance_matched_cap,volume_volatility,9,0.15603941100842503,-1.1756254486593332,complete,complete
+cmc_30_cap,price,10,1.0296009636733248,-1.1806713853399506,complete,complete
+binance_matched_cap,size,11,0.8392975383136558,-1.2199610845047766,complete,complete
+cmc_30_cap,size,12,1.389497946455907,-1.226343338192945,complete,complete
+binance_matched_cap,max_price,13,0.8712547073475583,-1.4124234088123704,complete,complete
+binance_matched_cap,price,14,0.8155094760703273,-1.4311676902039254,complete,complete
+binance_matched_cap,dollar_volume,15,0.31422124950645053,-1.5348480321667384,complete,complete
+cmc_30_cap,dollar_volume,16,1.0961637852125703,-1.5586328271315146,complete,complete
+cmc_30_cap,mom_1w,17,0.16076947154843674,-1.8043457840858397,complete,complete
+cmc_30_cap,volume_volatility,18,1.2606555987878771,-1.8856610792799309,complete,complete

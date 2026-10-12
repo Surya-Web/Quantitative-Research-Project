@@ -1,0 +1,1324 @@
+{
+  "specification": {
+    "study": "zarattini_donchian_momentum_channels",
+    "assets": [
+      "AAVE-USD",
+      "ADA-USD",
+      "ALGO-USD",
+      "ATOM-USD",
+      "AVAX-USD",
+      "BCH-USD",
+      "BNB-USD",
+      "BTC-USD",
+      "CRV-USD",
+      "DOGE-USD",
+      "DOT-USD",
+      "ETC-USD",
+      "ETH-USD",
+      "FIL-USD",
+      "HBAR-USD",
+      "INJ-USD",
+      "LINK-USD",
+      "LTC-USD",
+      "MANA-USD",
+      "MKR-USD",
+      "NEAR-USD",
+      "RUNE-USD",
+      "SAND-USD",
+      "SOL-USD",
+      "THETA-USD",
+      "TRX-USD",
+      "UNI-USD",
+      "VET-USD",
+      "XLM-USD",
+      "XRP-USD"
+    ],
+    "sample_start": "2021-01-01",
+    "sample_end": "2026-09-17",
+    "backtest_start": "2021-01-02",
+    "backtest_end": "2024-12-31",
+    "validation_start": "2025-01-01",
+    "validation_end": "2026-09-17",
+    "lookbacks": [
+      5,
+      10,
+      20,
+      30,
+      60,
+      90,
+      150,
+      250,
+      360
+    ],
+    "target_vol": 0.25,
+    "vol_window": 90,
+    "max_leverage": 1.0,
+    "cost_bps": 20,
+    "threshold": 0.2,
+    "threshold_denominator": "current marked-to-market weight",
+    "stop_timing": "prior-close stop; current midpoint updates next stop",
+    "history_age_proxy_days": 365,
+    "warmup": "common 360 closes; rotating baskets additionally require 365 observed elapsed days",
+    "entry_volume": 2000000,
+    "exit_volume": 1000000,
+    "exit_abs_move": 0.005,
+    "monthly_ranking": "calendar-month median volume",
+    "accounting": "monthly equal capital; intra-month asset units and sleeve equity drift",
+    "missing_slots": "unallocated cash",
+    "net_basis": "same executed exposures, actual fees and segment liquidation",
+    "input_sha256": {
+      "crypto_30_coin_daily_ohlcv.csv": "9cafef5935bb06669045d8fd3060ca9cc3f8a46ff3489c73912bb0d25c6ada6f"
+    },
+    "experiments": {
+      "rotating_5_LO_5_T20_R0": {
+        "direction": "LO",
+        "model": "5",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LO_10_T20_R0": {
+        "direction": "LO",
+        "model": "10",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LO_20_T20_R0": {
+        "direction": "LO",
+        "model": "20",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LO_30_T20_R0": {
+        "direction": "LO",
+        "model": "30",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LO_60_T20_R0": {
+        "direction": "LO",
+        "model": "60",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LO_90_T20_R0": {
+        "direction": "LO",
+        "model": "90",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LO_150_T20_R0": {
+        "direction": "LO",
+        "model": "150",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LO_250_T20_R0": {
+        "direction": "LO",
+        "model": "250",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LO_360_T20_R0": {
+        "direction": "LO",
+        "model": "360",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_5_T20_R0": {
+        "direction": "LO",
+        "model": "5",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_10_T20_R0": {
+        "direction": "LO",
+        "model": "10",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_20_T20_R0": {
+        "direction": "LO",
+        "model": "20",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_30_T20_R0": {
+        "direction": "LO",
+        "model": "30",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_60_T20_R0": {
+        "direction": "LO",
+        "model": "60",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_90_T20_R0": {
+        "direction": "LO",
+        "model": "90",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_150_T20_R0": {
+        "direction": "LO",
+        "model": "150",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_250_T20_R0": {
+        "direction": "LO",
+        "model": "250",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_360_T20_R0": {
+        "direction": "LO",
+        "model": "360",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_5_T20_R0": {
+        "direction": "LO",
+        "model": "5",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_10_T20_R0": {
+        "direction": "LO",
+        "model": "10",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_20_T20_R0": {
+        "direction": "LO",
+        "model": "20",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_30_T20_R0": {
+        "direction": "LO",
+        "model": "30",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_60_T20_R0": {
+        "direction": "LO",
+        "model": "60",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_90_T20_R0": {
+        "direction": "LO",
+        "model": "90",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_150_T20_R0": {
+        "direction": "LO",
+        "model": "150",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_250_T20_R0": {
+        "direction": "LO",
+        "model": "250",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_360_T20_R0": {
+        "direction": "LO",
+        "model": "360",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_5_T20_R0": {
+        "direction": "LO",
+        "model": "5",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_10_T20_R0": {
+        "direction": "LO",
+        "model": "10",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_20_T20_R0": {
+        "direction": "LO",
+        "model": "20",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_30_T20_R0": {
+        "direction": "LO",
+        "model": "30",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_60_T20_R0": {
+        "direction": "LO",
+        "model": "60",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_90_T20_R0": {
+        "direction": "LO",
+        "model": "90",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_150_T20_R0": {
+        "direction": "LO",
+        "model": "150",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_250_T20_R0": {
+        "direction": "LO",
+        "model": "250",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_360_T20_R0": {
+        "direction": "LO",
+        "model": "360",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_5_T20_R0": {
+        "direction": "LO",
+        "model": "5",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_10_T20_R0": {
+        "direction": "LO",
+        "model": "10",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_20_T20_R0": {
+        "direction": "LO",
+        "model": "20",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_30_T20_R0": {
+        "direction": "LO",
+        "model": "30",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_60_T20_R0": {
+        "direction": "LO",
+        "model": "60",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_90_T20_R0": {
+        "direction": "LO",
+        "model": "90",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_150_T20_R0": {
+        "direction": "LO",
+        "model": "150",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_250_T20_R0": {
+        "direction": "LO",
+        "model": "250",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_360_T20_R0": {
+        "direction": "LO",
+        "model": "360",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_2_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 2,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_3_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 3,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_4_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 4,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_6_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 6,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_7_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 7,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_8_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 8,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_9_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 9,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_11_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 11,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_12_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 12,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_13_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 13,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_14_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 14,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_15_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 15,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_16_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 16,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_17_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 17,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_18_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 18,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_19_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 19,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_21_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 21,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_22_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 22,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_23_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 23,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_24_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 24,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_25_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 25,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_26_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 26,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_27_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 27,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_28_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 28,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_29_LO_Combo_T20_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 29,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_5_T20_R0": {
+        "direction": "LS",
+        "model": "5",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_10_T20_R0": {
+        "direction": "LS",
+        "model": "10",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_20_T20_R0": {
+        "direction": "LS",
+        "model": "20",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_30_T20_R0": {
+        "direction": "LS",
+        "model": "30",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_60_T20_R0": {
+        "direction": "LS",
+        "model": "60",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_90_T20_R0": {
+        "direction": "LS",
+        "model": "90",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_150_T20_R0": {
+        "direction": "LS",
+        "model": "150",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_250_T20_R0": {
+        "direction": "LS",
+        "model": "250",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_360_T20_R0": {
+        "direction": "LS",
+        "model": "360",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_2_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 2,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_3_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 3,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_4_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 4,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_5_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 5,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_6_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 6,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_7_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 7,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_8_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 8,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_9_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 9,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_10_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 10,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_11_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 11,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_12_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 12,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_13_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 13,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_14_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 14,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_15_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 15,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_16_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 16,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_17_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 17,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_18_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 18,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_19_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 19,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_20_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_21_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 21,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_22_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 22,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_23_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 23,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_24_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 24,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_25_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 25,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_26_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 26,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_27_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 27,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_28_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 28,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_29_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 29,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "rotating_30_LS_Combo_T20_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 30,
+        "asset": null,
+        "threshold": 0.2,
+        "rank_start": 0
+      },
+      "single_BTC_LO_5_T0_R0": {
+        "direction": "LO",
+        "model": "5",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LO_10_T0_R0": {
+        "direction": "LO",
+        "model": "10",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LO_20_T0_R0": {
+        "direction": "LO",
+        "model": "20",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LO_30_T0_R0": {
+        "direction": "LO",
+        "model": "30",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LO_60_T0_R0": {
+        "direction": "LO",
+        "model": "60",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LO_90_T0_R0": {
+        "direction": "LO",
+        "model": "90",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LO_150_T0_R0": {
+        "direction": "LO",
+        "model": "150",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LO_250_T0_R0": {
+        "direction": "LO",
+        "model": "250",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LO_360_T0_R0": {
+        "direction": "LO",
+        "model": "360",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LO_Combo_T0_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_5_T0_R0": {
+        "direction": "LS",
+        "model": "5",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_10_T0_R0": {
+        "direction": "LS",
+        "model": "10",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_20_T0_R0": {
+        "direction": "LS",
+        "model": "20",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_30_T0_R0": {
+        "direction": "LS",
+        "model": "30",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_60_T0_R0": {
+        "direction": "LS",
+        "model": "60",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_90_T0_R0": {
+        "direction": "LS",
+        "model": "90",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_150_T0_R0": {
+        "direction": "LS",
+        "model": "150",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_250_T0_R0": {
+        "direction": "LS",
+        "model": "250",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_360_T0_R0": {
+        "direction": "LS",
+        "model": "360",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "single_BTC_LS_Combo_T0_R0": {
+        "direction": "LS",
+        "model": "Combo",
+        "scope": "single",
+        "breadth": 1,
+        "asset": "BTC-USD",
+        "threshold": 0.0,
+        "rank_start": 0
+      },
+      "rotating_20_LO_Combo_T0_R0": {
+        "direction": "LO",
+        "model": "Combo",
+        "scope": "rotating",
+        "breadth": 20,
+        "asset": null,
+        "threshold": 0.0,
+        "rank_start": 0
+      }
+    }
+  },
+  "selection": {
+    "selected_strategy": "rotating_30_LO_20_T20_R0",
+    "selected_specification": {
+      "direction": "LO",
+      "model": "20",
+      "scope": "rotating",
+      "breadth": 30,
+      "asset": null,
+      "threshold": 0.2,
+      "rank_start": 0
+    },
+    "selection_criterion": "Backtest net Sharpe, ties lower turnover then declared order",
+    "candidate_count": 40,
+    "backtest_last_date": "2024-12-31"
+  },
+  "environment": {
+    "python": "3.13.13",
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "statsmodels": "0.14.6"
+  },
+  "figures": [
+    "donchian_walkthrough",
+    "btc_horizon_comparison",
+    "threshold_turnover",
+    "horizon_breadth_grid",
+    "breadth_curve",
+    "backtest_performance",
+    "validation_performance",
+    "strategy_train_validation_sharpe",
+    "calendar_returns"
+  ],
+  "validation_previously_explored": true,
+  "notebook_source_sha256": "6f900c313d348d263b53f7ad46b9f35330b0ccd81a3602fde9c328db06513a0d"
+}

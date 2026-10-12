@@ -1,0 +1,3 @@
+symbol,announced_at,halt_at,resume_at,replacement,new_units_per_old,event_type,source_url,resume_source_url
+BEAMUSDT,2023-01-19 04:00,2023-01-26 09:00,,,,delisting,https://www.binance.com/en/support/announcement/detail/a80d47617f1046b883b5ba237d2c75a7,
+KEYUSDT,2023-02-08 04:20,2023-02-10 03:00,2023-03-10 08:00,KEYUSDT,1,pair_suspension,https://www.binance.com/en/support/announcement/detail/7ec33a2d62974c3490b92ff0780ba461,https://www.binance.com/en/support/announcement/detail/8ef61bec1227429a910877be141c5af3

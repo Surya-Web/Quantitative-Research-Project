@@ -1,0 +1,2 @@
+instrument,announced_at,halt_at,opened,executed_at,price,quote_volume,maximum_fill_notional,source_url,notice_url,archive_sha256
+UTKUSDT,2026-04-14 02:00:00,2026-04-14 14:00:00,2026-04-14 02:01:00,2026-04-14 02:01:59.999999,0.01433,223043.10102,2230.4310102,https://data.binance.vision/data/spot/daily/klines/UTKUSDT/1m/UTKUSDT-1m-2026-04-14.zip,https://www.binance.com/en/support/announcement/detail/895c114d247a41159cc7e4c913f42c36,d4621947cd72992322a274711776414e6708d007bfd0faf09ed7c505dffac89f

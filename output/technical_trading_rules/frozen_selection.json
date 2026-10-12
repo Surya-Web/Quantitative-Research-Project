@@ -1,0 +1,15 @@
+{
+  "strategy": "VMA_20",
+  "criterion": "Highest backtest cross-coin annual mean natural-log return, net 20 bps, common warm-up",
+  "tie_break": "Lower turnover, then shorter lookback",
+  "author_reference": "VMA_20",
+  "backtest_gross_winner": "VMA_20",
+  "backtest_end": "2024-12-31",
+  "candidates": [
+    "VMA_20",
+    "VMA_50",
+    "VMA_100",
+    "VMA_150",
+    "VMA_200"
+  ]
+}

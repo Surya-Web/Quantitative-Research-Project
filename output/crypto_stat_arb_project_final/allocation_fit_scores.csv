@@ -1,0 +1,18 @@
+,Allocation-fit Sharpe
+All seven / measured correlations,0.8023733417432007
+All seven / independence assumption,0.661874863216841
+All seven / signed mathematical bound,0.8292913557594415
+Liu 30 / 3w + Donchian B5 / 30d + both pairs / correlated,0.6680848551971529
+Liu 30 / 3w + Donchian B5 / 30d + both pairs / independent,0.6659494619640879
+Liu 30 / 3w + Donchian B5 / 60d + both pairs / correlated,0.7369098062222211
+Liu 30 / 3w + Donchian B5 / 60d + both pairs / independent,0.7334333535008853
+Liu 30 / 3w + Donchian B5 / 90d + both pairs / correlated,0.7716280889767736
+Liu 30 / 3w + Donchian B5 / 90d + both pairs / independent,0.7679560872102112
+Liu extended / 3w + Donchian B5 / 30d + both pairs / correlated,0.704251551349311
+Liu extended / 3w + Donchian B5 / 30d + both pairs / independent,0.7008715072096224
+Liu extended / 3w + Donchian B5 / 60d + both pairs / correlated,0.7673670789088566
+Liu extended / 3w + Donchian B5 / 60d + both pairs / independent,0.7618397420702974
+Liu extended / 3w + Donchian B5 / 90d + both pairs / correlated,0.8023733417432007
+Liu extended / 3w + Donchian B5 / 90d + both pairs / independent,0.7966519749148339
+Both pairs / correlated,0.5496727699434595
+Both pairs / independent,0.5496262019768772

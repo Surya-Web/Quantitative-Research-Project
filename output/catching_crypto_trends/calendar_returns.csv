@@ -1,0 +1,19 @@
+Period,Year,Strategy,N dates,Net return (%)
+Backtest,2021,rotating_20_LO_Combo_T20_R0,364,0.0
+Backtest,2021,rotating_20_LS_Combo_T20_R0,364,0.0
+Backtest,2021,rotating_30_LO_20_T20_R0,364,0.0
+Backtest,2022,rotating_20_LO_Combo_T20_R0,365,-4.715643078485643
+Backtest,2022,rotating_20_LS_Combo_T20_R0,365,3.6794328259923015
+Backtest,2022,rotating_30_LO_20_T20_R0,365,-6.399460610117558
+Backtest,2023,rotating_20_LO_Combo_T20_R0,365,13.441943152870174
+Backtest,2023,rotating_20_LS_Combo_T20_R0,365,-1.7532286107620032
+Backtest,2023,rotating_30_LO_20_T20_R0,365,26.94127816685925
+Backtest,2024,rotating_20_LO_Combo_T20_R0,366,18.737902126430118
+Backtest,2024,rotating_20_LS_Combo_T20_R0,366,10.303345792600439
+Backtest,2024,rotating_30_LO_20_T20_R0,366,29.352214570741243
+Validation,2025,rotating_20_LO_Combo_T20_R0,365,-2.987680481625732
+Validation,2025,rotating_20_LS_Combo_T20_R0,365,-7.480565107474469
+Validation,2025,rotating_30_LO_20_T20_R0,365,-1.8943440521755561
+Validation,2026,rotating_20_LO_Combo_T20_R0,260,-1.1082472411255817
+Validation,2026,rotating_20_LS_Combo_T20_R0,260,0.1294362734337362
+Validation,2026,rotating_30_LO_20_T20_R0,260,-0.4965902942633771

@@ -1,0 +1,25 @@
+Period,Weighting,Basis,Strategy,Mean daily (%),HAC t-stat,HAC p-value
+Backtest,Equal-weighted,gross,Low-volume reversal,-0.16632053742800826,-2.533254465794538,0.011406627735601664
+Backtest,Equal-weighted,gross,Middle-volume reversal,-0.08810946540217184,-1.0269811821466184,0.30460240112760556
+Backtest,Equal-weighted,gross,High-volume reversal,-0.05894006785611333,-0.6531479105074883,0.5137655567701684
+Backtest,Equal-weighted,net,Low-volume reversal,-0.8174330479362539,-12.553240625797859,2.269119235978259e-34
+Backtest,Equal-weighted,net,Middle-volume reversal,-0.7891822420848899,-9.298096320312593,5.148773127614501e-20
+Backtest,Equal-weighted,net,High-volume reversal,-0.6882436722183142,-7.78720472006316,1.3040380557258845e-14
+Backtest,Value-weighted,gross,Low-volume reversal,-0.25464724741266387,-2.893571512963725,0.003866399993851553
+Backtest,Value-weighted,gross,Middle-volume reversal,-0.13064193950275696,-1.6320837750704602,0.10288124276099965
+Backtest,Value-weighted,gross,High-volume reversal,0.08323405633658472,0.7324284796445395,0.464026690184846
+Backtest,Value-weighted,net,Low-volume reversal,-0.9532100015425893,-10.974160463922937,5.80161558004594e-27
+Backtest,Value-weighted,net,Middle-volume reversal,-0.8541044647633209,-10.800651647058755,3.370062942194026e-26
+Backtest,Value-weighted,net,High-volume reversal,-0.5927550859042516,-5.264781499641043,1.6170320566718348e-07
+Validation,Equal-weighted,gross,Low-volume reversal,-0.004748083062821768,-0.07046161979617284,0.9438488228507649
+Validation,Equal-weighted,gross,Middle-volume reversal,-0.04540052023191841,-0.5537198830285408,0.5799689183469592
+Validation,Equal-weighted,gross,High-volume reversal,-0.03360332910225811,-0.2715662868995211,0.7860453435147666
+Validation,Equal-weighted,net,Low-volume reversal,-0.6507998734686673,-9.836448289974657,2.532626337256905e-21
+Validation,Equal-weighted,net,Middle-volume reversal,-0.744647122349069,-9.35490275603312,1.4815937042987273e-19
+Validation,Equal-weighted,net,High-volume reversal,-0.6652804205816696,-5.471980189295536,6.450812382931586e-08
+Validation,Value-weighted,gross,Low-volume reversal,-0.07675697276558874,-0.8356129932505356,0.4036924927797971
+Validation,Value-weighted,gross,Middle-volume reversal,-0.1606327846696383,-1.5909759247645359,0.1121214482358693
+Validation,Value-weighted,gross,High-volume reversal,-0.17550315929872995,-1.2729065168538163,0.20352525615109418
+Validation,Value-weighted,net,Low-volume reversal,-0.7803541174703401,-8.660462160903439,4.0113873348923923e-17
+Validation,Value-weighted,net,Middle-volume reversal,-0.8853171963392992,-8.923967364058289,4.974899362428632e-18
+Validation,Value-weighted,net,High-volume reversal,-0.8488758729387327,-6.251833208976527,7.523478957984124e-10
