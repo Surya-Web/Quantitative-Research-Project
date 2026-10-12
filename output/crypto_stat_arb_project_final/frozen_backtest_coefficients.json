@@ -13,15 +13,15 @@
     ],
     "weights": {
       "Liu 30 / 3w": 0.0,
-      "Liu extended / 3w": 0.07971798727179136,
+      "Liu extended / 3w": 0.07971798727179137,
       "Donchian B5 / 30d": 0.0,
       "Donchian B5 / 60d": 0.0,
-      "Donchian B5 / 90d": 0.5428793381744137,
-      "ETC/VET": 0.19669087105874294,
+      "Donchian B5 / 90d": 0.5428793381744136,
+      "ETC/VET": 0.196690871058743,
       "AAVE/XLM": 0.18071180349505192
     },
-    "assumption_max_sharpe": 0.8023733417432007,
-    "cash_weight": 1.1102230246251565e-16,
+    "assumption_max_sharpe": 0.6666998068468586,
+    "cash_weight": 2.220446049250313e-16,
     "status": "fitted",
     "executable": true
   },
@@ -38,16 +38,16 @@
       "AAVE/XLM"
     ],
     "weights": {
-      "Liu 30 / 3w": 0.015900479133658895,
-      "Liu extended / 3w": 0.051662519709261306,
-      "Donchian B5 / 30d": 0.20455515666095617,
+      "Liu 30 / 3w": 0.0159004791336589,
+      "Liu extended / 3w": 0.0516625197092613,
+      "Donchian B5 / 30d": 0.2045551566609562,
       "Donchian B5 / 60d": 0.2504744884885346,
-      "Donchian B5 / 90d": 0.2919349377435724,
-      "ETC/VET": 0.10606475025273349,
+      "Donchian B5 / 90d": 0.2919349377435723,
+      "ETC/VET": 0.1060647502527335,
       "AAVE/XLM": 0.07940766801128321
     },
-    "assumption_max_sharpe": 0.9443703824354919,
-    "cash_weight": 0.0,
+    "assumption_max_sharpe": 0.7846865278372414,
+    "cash_weight": -2.220446049250313e-16,
     "status": "fitted",
     "executable": true
   },
@@ -64,16 +64,16 @@
       "AAVE/XLM"
     ],
     "weights": {
-      "Liu 30 / 3w": -0.031722949646818766,
-      "Liu extended / 3w": 0.07537672494702849,
-      "Donchian B5 / 30d": -0.11144482819839652,
-      "Donchian B5 / 60d": -0.0946652948066645,
-      "Donchian B5 / 90d": 0.47990363815213916,
-      "ETC/VET": 0.10700515695448277,
-      "AAVE/XLM": 0.0998814072944699
+      "Liu 30 / 3w": -0.03172294964681879,
+      "Liu extended / 3w": 0.07537672494702857,
+      "Donchian B5 / 30d": -0.11144482819839667,
+      "Donchian B5 / 60d": -0.09466529480666402,
+      "Donchian B5 / 90d": 0.4799036381521391,
+      "ETC/VET": 0.10700515695448289,
+      "AAVE/XLM": 0.09988140729447004
     },
-    "assumption_max_sharpe": 0.8292913557594414,
-    "cash_weight": 0.4756661453037595,
+    "assumption_max_sharpe": 0.6890662462730981,
+    "cash_weight": 0.47566614530375895,
     "status": "fitted",
     "executable": false
   },
@@ -87,16 +87,16 @@
       "AAVE/XLM"
     ],
     "weights": {
-      "Liu 30 / 3w": 0.024140528232672803,
+      "Liu 30 / 3w": 0.024140528232672796,
       "Liu extended / 3w": 0.0,
       "Donchian B5 / 30d": 0.5070738594976943,
       "Donchian B5 / 60d": 0.0,
       "Donchian B5 / 90d": 0.0,
-      "ETC/VET": 0.25558009716412916,
-      "AAVE/XLM": 0.21320551510550376
+      "ETC/VET": 0.2555800971641291,
+      "AAVE/XLM": 0.21320551510550367
     },
-    "assumption_max_sharpe": 0.6680848551971531,
-    "cash_weight": 0.0,
+    "assumption_max_sharpe": 0.5551181984057085,
+    "cash_weight": 1.1102230246251565e-16,
     "status": "fitted",
     "executable": true
   },
@@ -110,15 +110,15 @@
       "AAVE/XLM"
     ],
     "weights": {
-      "Liu 30 / 3w": 0.03917068301803612,
+      "Liu 30 / 3w": 0.039170683018036126,
       "Liu extended / 3w": 0.0,
       "Donchian B5 / 30d": 0.5039197331047498,
       "Donchian B5 / 60d": 0.0,
       "Donchian B5 / 90d": 0.0,
       "ETC/VET": 0.26128952949237066,
-      "AAVE/XLM": 0.19562005438484345
+      "AAVE/XLM": 0.19562005438484342
     },
-    "assumption_max_sharpe": 0.6416782962845549,
+    "assumption_max_sharpe": 0.5331767319952331,
     "cash_weight": 0.0,
     "status": "fitted",
     "executable": true
@@ -133,16 +133,16 @@
       "AAVE/XLM"
     ],
     "weights": {
-      "Liu 30 / 3w": 0.0202390452818593,
+      "Liu 30 / 3w": 0.020239045281859304,
       "Liu extended / 3w": 0.0,
       "Donchian B5 / 30d": 0.0,
-      "Donchian B5 / 60d": 0.5568257025932412,
+      "Donchian B5 / 60d": 0.556825702593241,
       "Donchian B5 / 90d": 0.0,
-      "ETC/VET": 0.22429999007424925,
-      "AAVE/XLM": 0.19863526205065038
+      "ETC/VET": 0.2242999900742492,
+      "AAVE/XLM": 0.19863526205065035
     },
-    "assumption_max_sharpe": 0.7369098062222211,
-    "cash_weight": 0.0,
+    "assumption_max_sharpe": 0.6123055190300061,
+    "cash_weight": 2.220446049250313e-16,
     "status": "fitted",
     "executable": true
   },
@@ -162,9 +162,9 @@
       "Donchian B5 / 60d": 0.5543342648697146,
       "Donchian B5 / 90d": 0.0,
       "ETC/VET": 0.23473578373084586,
-      "AAVE/XLM": 0.17574001862496255
+      "AAVE/XLM": 0.17574001862496252
     },
-    "assumption_max_sharpe": 0.6947558213163842,
+    "assumption_max_sharpe": 0.5772793633335951,
     "cash_weight": 0.0,
     "status": "fitted",
     "executable": true
@@ -179,16 +179,16 @@
       "AAVE/XLM"
     ],
     "weights": {
-      "Liu 30 / 3w": 0.01951418601918326,
+      "Liu 30 / 3w": 0.01951418601918325,
       "Liu extended / 3w": 0.0,
       "Donchian B5 / 30d": 0.0,
       "Donchian B5 / 60d": 0.0,
-      "Donchian B5 / 90d": 0.5905022227038299,
+      "Donchian B5 / 90d": 0.5905022227038298,
       "ETC/VET": 0.20530907462173498,
-      "AAVE/XLM": 0.18467451665525195
+      "AAVE/XLM": 0.1846745166552519
     },
-    "assumption_max_sharpe": 0.7716280889767739,
-    "cash_weight": -2.220446049250313e-16,
+    "assumption_max_sharpe": 0.6411532775512793,
+    "cash_weight": 1.1102230246251565e-16,
     "status": "fitted",
     "executable": true
   },
@@ -202,16 +202,16 @@
       "AAVE/XLM"
     ],
     "weights": {
-      "Liu 30 / 3w": 0.032232366893394544,
+      "Liu 30 / 3w": 0.03223236689339456,
       "Liu extended / 3w": 0.0,
       "Donchian B5 / 30d": 0.0,
       "Donchian B5 / 60d": 0.0,
       "Donchian B5 / 90d": 0.5917905959470179,
-      "ETC/VET": 0.21500722813851955,
-      "AAVE/XLM": 0.16096980902106806
+      "ETC/VET": 0.21500722813851958,
+      "AAVE/XLM": 0.16096980902106808
     },
-    "assumption_max_sharpe": 0.7236610743930127,
-    "cash_weight": 0.0,
+    "assumption_max_sharpe": 0.6012970190064272,
+    "cash_weight": -2.220446049250313e-16,
     "status": "fitted",
     "executable": true
   },
@@ -226,15 +226,15 @@
     ],
     "weights": {
       "Liu 30 / 3w": 0.0,
-      "Liu extended / 3w": 0.10253328534372871,
-      "Donchian B5 / 30d": 0.4453818518564008,
+      "Liu extended / 3w": 0.1025332853437287,
+      "Donchian B5 / 30d": 0.4453818518564009,
       "Donchian B5 / 60d": 0.0,
       "Donchian B5 / 90d": 0.0,
       "ETC/VET": 0.24375318254862316,
-      "AAVE/XLM": 0.20833168025124724
+      "AAVE/XLM": 0.2083316802512472
     },
-    "assumption_max_sharpe": 0.7042515513493108,
-    "cash_weight": 1.1102230246251565e-16,
+    "assumption_max_sharpe": 0.5851694576942428,
+    "cash_weight": 0.0,
     "status": "fitted",
     "executable": true
   },
@@ -249,15 +249,15 @@
     ],
     "weights": {
       "Liu 30 / 3w": 0.0,
-      "Liu extended / 3w": 0.11696553836472902,
+      "Liu extended / 3w": 0.11696553836472899,
       "Donchian B5 / 30d": 0.4631191850257574,
       "Donchian B5 / 60d": 0.0,
       "Donchian B5 / 90d": 0.0,
       "ETC/VET": 0.24013386657576338,
-      "AAVE/XLM": 0.17978141003375028
+      "AAVE/XLM": 0.17978141003375026
     },
-    "assumption_max_sharpe": 0.684150034554507,
-    "cash_weight": -2.220446049250313e-16,
+    "assumption_max_sharpe": 0.5684669120497067,
+    "cash_weight": 0.0,
     "status": "fitted",
     "executable": true
   },
@@ -272,15 +272,15 @@
     ],
     "weights": {
       "Liu 30 / 3w": 0.0,
-      "Liu extended / 3w": 0.08557157853642705,
+      "Liu extended / 3w": 0.08557157853642706,
       "Donchian B5 / 30d": 0.0,
-      "Donchian B5 / 60d": 0.5051895145843367,
+      "Donchian B5 / 60d": 0.5051895145843368,
       "Donchian B5 / 90d": 0.0,
-      "ETC/VET": 0.21498804778509423,
-      "AAVE/XLM": 0.19425085909414194
+      "ETC/VET": 0.21498804778509426,
+      "AAVE/XLM": 0.19425085909414197
     },
-    "assumption_max_sharpe": 0.7673670789088568,
-    "cash_weight": 1.1102230246251565e-16,
+    "assumption_max_sharpe": 0.6376127628787941,
+    "cash_weight": 0.0,
     "status": "fitted",
     "executable": true
   },
@@ -295,14 +295,14 @@
     ],
     "weights": {
       "Liu 30 / 3w": 0.0,
-      "Liu extended / 3w": 0.10595061724736218,
+      "Liu extended / 3w": 0.10595061724736217,
       "Donchian B5 / 30d": 0.0,
       "Donchian B5 / 60d": 0.5136785199294146,
       "Donchian B5 / 90d": 0.0,
       "ETC/VET": 0.21751989296507174,
       "AAVE/XLM": 0.16285096985815156
     },
-    "assumption_max_sharpe": 0.7341633912905815,
+    "assumption_max_sharpe": 0.6100234961745764,
     "cash_weight": 0.0,
     "status": "fitted",
     "executable": true
@@ -318,15 +318,15 @@
     ],
     "weights": {
       "Liu 30 / 3w": 0.0,
-      "Liu extended / 3w": 0.07971798727179136,
+      "Liu extended / 3w": 0.07971798727179137,
       "Donchian B5 / 30d": 0.0,
       "Donchian B5 / 60d": 0.0,
-      "Donchian B5 / 90d": 0.5428793381744137,
-      "ETC/VET": 0.19669087105874294,
+      "Donchian B5 / 90d": 0.5428793381744136,
+      "ETC/VET": 0.196690871058743,
       "AAVE/XLM": 0.18071180349505192
     },
-    "assumption_max_sharpe": 0.8023733417432007,
-    "cash_weight": 1.1102230246251565e-16,
+    "assumption_max_sharpe": 0.6666998068468586,
+    "cash_weight": 2.220446049250313e-16,
     "status": "fitted",
     "executable": true
   },
@@ -344,12 +344,12 @@
       "Liu extended / 3w": 0.09764781946668656,
       "Donchian B5 / 30d": 0.0,
       "Donchian B5 / 60d": 0.0,
-      "Donchian B5 / 90d": 0.5517890001732233,
-      "ETC/VET": 0.20047399241739786,
+      "Donchian B5 / 90d": 0.5517890001732232,
+      "ETC/VET": 0.20047399241739788,
       "AAVE/XLM": 0.1500891879426923
     },
-    "assumption_max_sharpe": 0.7615744116302318,
-    "cash_weight": 0.0,
+    "assumption_max_sharpe": 0.6327995793458052,
+    "cash_weight": 1.1102230246251565e-16,
     "status": "fitted",
     "executable": true
   },
@@ -366,10 +366,10 @@
       "Donchian B5 / 30d": 0.0,
       "Donchian B5 / 60d": 0.0,
       "Donchian B5 / 90d": 0.0,
-      "ETC/VET": 0.5656336438680598,
-      "AAVE/XLM": 0.43436635613194025
+      "ETC/VET": 0.5656336438680599,
+      "AAVE/XLM": 0.4343663561319402
     },
-    "assumption_max_sharpe": 0.5496727699434594,
+    "assumption_max_sharpe": 0.45672844607986696,
     "cash_weight": 0.0,
     "status": "fitted",
     "executable": true
@@ -390,7 +390,7 @@
       "ETC/VET": 0.5718626588550336,
       "AAVE/XLM": 0.4281373411449664
     },
-    "assumption_max_sharpe": 0.535146580912364,
+    "assumption_max_sharpe": 0.4446584944533438,
     "cash_weight": 0.0,
     "status": "fitted",
     "executable": true

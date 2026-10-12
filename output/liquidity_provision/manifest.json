@@ -76,12 +76,12 @@
     }
   },
   "environment": {
-    "python": "3.13.13",
-    "numpy": "2.5.1",
-    "pandas": "3.0.5",
+    "python": "3.13.2",
+    "numpy": "2.4.2",
+    "pandas": "3.0.3",
     "statsmodels": "0.14.6"
   },
-  "notebook_source_sha256": "12fc26bb68de45cd71b380b25f3eaca8147d26aa024d9fdfc3d648bb45ead904",
+  "notebook_source_sha256": "ea991dd58b6fa6548264474e44ad80db0a997338770298cbad8ecf03c32de16a",
   "figure_names": [
     "strategy_train_validation_sharpe",
     "backtest_performance",

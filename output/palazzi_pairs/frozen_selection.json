@@ -3,7 +3,7 @@
   "asset_y": "THETA-USD",
   "asset_x": "VET-USD",
   "lookback": 136,
-  "backtest_sharpe": 1.6113036032928596,
+  "backtest_sharpe": 1.3388478220788298,
   "gamma": 1.1667572301122588,
   "coint_pvalue": 0.0030262371071606785,
   "selection_criterion": "Backtest net Sharpe among EG p<0.05 pairs; ties use lower turnover, then pair id",

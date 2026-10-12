@@ -43,8 +43,8 @@
     }
   ],
   "pair_fit_source_hashes": {
-    "output/palazzi_pairs/manifest.json": "783982dcc9ead6c0ca3380f612947b962bd9c2946677a29ffa8117ad725df61f",
-    "output/palazzi_pairs/backtest_leaderboard.csv": "20e7d10f7a57d98d46855faade23f497555b3ca05307a1da01800f5f347dd548"
+    "output/palazzi_pairs/manifest.json": "734fb4b49e424cbeb38031fb415f4947208e2f9ae758250bd99c7167dc747fd4",
+    "output/palazzi_pairs/backtest_leaderboard.csv": "796e56845ea1af46d47358a896d4491b74a3f90c15bdfdc33498b76ce3522407"
   },
   "pair_backtest_role": "Causal monthly expanding calibration; Validation parameters frozen at split",
   "accounts": [

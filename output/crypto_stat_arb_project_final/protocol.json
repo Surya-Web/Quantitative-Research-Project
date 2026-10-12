@@ -19,7 +19,7 @@
   "backtest_role": "Training return histories and in-sample Sharpe fitting only",
   "candidate_selection_role": "Earlier validation informed nomination; historical development evidence",
   "reference_method": "Optimized reference",
-  "primary_scenario": "+10 bps slippage +5% borrow",
+  "primary_scenario": "20 bps baseline",
   "bootstrap_replications": 10000,
   "bootstrap_blocks": [
     20,
@@ -28,6 +28,8 @@
   ],
   "seed": 20261007,
   "hac_lags": 20,
+  "headline_sharpe_days": 252,
+  "comparison_sharpe_days": 365,
   "cash_daily_rate": 0.0,
   "hedge_window": 365,
   "hedge_update": "First evaluation close and each month start; data through prior close",
@@ -46,6 +48,8 @@
     "horizon_days": 625,
     "initial_capital_usdt": 100000.0,
     "annualization_days": 365,
+    "headline_sharpe_days": 252,
+    "comparison_sharpe_days": 365,
     "cash_daily_return": 0.0,
     "batch_size": 100,
     "fan_sample_paths": 2000,
@@ -125,7 +129,7 @@
             "Reference with BTC hedge"
           ]
         ],
-        "return_csv_sha256": "45aa55e03dd1024c792ebab9e2ba1ea01e8e5f5516b44b494a9ca695f4fa8151"
+        "return_csv_sha256": "6c49c6d6d196590c656841ecf8acbdd0522b17f3360c20cb0eee91939ebff9a8"
       },
       {
         "source": "Walk-forward retrospective",
@@ -183,7 +187,7 @@
             "Inverse volatility"
           ]
         ],
-        "return_csv_sha256": "4387ad30c405ed41c81b88065afa95df603b915609f76358a4f0b75315db8fcf"
+        "return_csv_sha256": "99901c131aa4bccc7a4ba00509abc4581764c62737918db6e491925d562d8868"
       }
     ],
     "costs": "Net account returns already include the scenario costs; no second deduction",
@@ -199,7 +203,7 @@
       "methods": [
         "Optimized reference"
       ],
-      "scenario": "+10 bps slippage +5% borrow"
+      "scenario": "20 bps baseline"
     },
     "boundary_treatment": "Observed cash-start and terminal-liquidation days are sampled as ordinary net-return observations",
     "path_metrics_npz_axes": [

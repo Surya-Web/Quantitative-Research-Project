@@ -1,11 +1,11 @@
 Strategy,Rebalance day,Backtest Sharpe,Validation Sharpe,Sharpe change,Selected construction in backtest
-Momentum overlay · Complete · equal weight,Wed,1.3330774294537318,-1.0280447044612393,-2.361122133914971,False
-Momentum overlay · Complete · equal weight,Thu,1.2965002981719902,-0.3005075592272411,-1.5970078573992312,False
-Momentum overlay · Complete · risk weight,Sun,1.2458721609441954,-1.775604552072556,-3.0214767130167512,False
-Momentum overlay · Complete · equal weight,Sun,1.2307235353592514,-1.7031096377626183,-2.9338331731218696,False
-Momentum overlay · Complete · risk weight,Wed,1.2305878198239644,-1.1223658362300206,-2.3529536560539848,False
-Momentum overlay · Complete · risk weight,Thu,1.1504502070342713,-0.428037375918741,-1.5784875829530123,False
-Momentum overlay · Complete · equal weight,Fri,1.0474856047286476,-1.294027972401455,-2.3415135771301028,False
-Momentum overlay · Complete · risk weight,Fri,1.0456586059518334,-1.4950195481489745,-2.540678154100808,False
-Complete · risk weight,Sun,0.9401030575000363,-1.4599019596058778,-2.400005017105914,True
-Momentum overlay · Complete · risk weight,Mon,0.9342070896027319,-1.9595754915851928,-2.8937825811879248,False
+Momentum overlay · Complete · equal weight,Wed,1.1076669905281549,-0.8542123351271623,-1.961879325655317,False
+Momentum overlay · Complete · equal weight,Thu,1.0772746967019797,-0.2496946511926165,-1.3269693478945963,False
+Momentum overlay · Complete · risk weight,Sun,1.0352072854923113,-1.475367077040864,-2.510574362533175,False
+Momentum overlay · Complete · equal weight,Sun,1.0226201452845676,-1.4151303482597077,-2.437750493544275,False
+Momentum overlay · Complete · risk weight,Wed,1.0225073779274598,-0.9325846800946619,-1.9550920580221218,False
+Momentum overlay · Complete · risk weight,Thu,0.9559202567103193,-0.3556604151731579,-1.3115806718834773,False
+Momentum overlay · Complete · equal weight,Fri,0.8703659680794377,-1.0752204171940174,-1.945586385273455,False
+Momentum overlay · Complete · risk weight,Fri,0.8688478970416271,-1.2422262706507041,-2.1110741676923315,False
+Complete · risk weight,Sun,0.7811407660799528,-1.2130467250694112,-1.994187491149364,True
+Momentum overlay · Complete · risk weight,Mon,0.7762417490590628,-1.628230318449207,-2.40447206750827,False

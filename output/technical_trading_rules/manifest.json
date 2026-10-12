@@ -102,10 +102,10 @@
     "calendar_returns"
   ],
   "environment": {
-    "python": "3.13.13",
-    "numpy": "2.5.1",
-    "pandas": "3.0.5",
+    "python": "3.13.2",
+    "numpy": "2.4.2",
+    "pandas": "3.0.3",
     "statsmodels": "0.14.6"
   },
-  "notebook_source_sha256": "5093f7064b08dabbae3c7be99a13705f03f1f0e1a2bbf639e61940bba4452ddb"
+  "notebook_source_sha256": "79708d4507f9f8623e6972040fb96c5feae74ada2899ce377ce4a4b1bfb114c4"
 }

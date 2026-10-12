@@ -1,6 +1,6 @@
 fold,Method,Strategy,weight,fit_start,fit_end,first_execution_close
 1,Optimized reference,Liu 30 / 3w,0.0,2021-01-02,2023-01-01,2023-01-02
-1,Optimized reference,Liu extended / 3w,0.39426430671447965,2021-01-02,2023-01-01,2023-01-02
+1,Optimized reference,Liu extended / 3w,0.39426430671447954,2021-01-02,2023-01-01,2023-01-02
 1,Optimized reference,Donchian B5 / 30d,0.0,2021-01-02,2023-01-01,2023-01-02
 1,Optimized reference,Donchian B5 / 60d,0.0,2021-01-02,2023-01-01,2023-01-02
 1,Optimized reference,Donchian B5 / 90d,0.0,2021-01-02,2023-01-01,2023-01-02
@@ -28,11 +28,11 @@ fold,Method,Strategy,weight,fit_start,fit_end,first_execution_close
 1,Inverse volatility,ETC/VET,0.045220091515336444,2021-01-02,2023-01-01,2023-01-02
 1,Inverse volatility,AAVE/XLM,0.04519575535973469,2021-01-02,2023-01-01,2023-01-02
 2,Optimized reference,Liu 30 / 3w,0.0,2021-07-02,2023-07-01,2023-07-02
-2,Optimized reference,Liu extended / 3w,0.24889118229146284,2021-07-02,2023-07-01,2023-07-02
+2,Optimized reference,Liu extended / 3w,0.24889118229146281,2021-07-02,2023-07-01,2023-07-02
 2,Optimized reference,Donchian B5 / 30d,0.0,2021-07-02,2023-07-01,2023-07-02
 2,Optimized reference,Donchian B5 / 60d,0.0,2021-07-02,2023-07-01,2023-07-02
 2,Optimized reference,Donchian B5 / 90d,0.0,2021-07-02,2023-07-01,2023-07-02
-2,Optimized reference,ETC/VET,0.0385013170026146,2021-07-02,2023-07-01,2023-07-02
+2,Optimized reference,ETC/VET,0.03850131700261461,2021-07-02,2023-07-01,2023-07-02
 2,Optimized reference,AAVE/XLM,0.7126075007059226,2021-07-02,2023-07-01,2023-07-02
 2,Equal strategy weights,Liu 30 / 3w,0.14285714285714285,2021-07-02,2023-07-01,2023-07-02
 2,Equal strategy weights,Liu extended / 3w,0.14285714285714285,2021-07-02,2023-07-01,2023-07-02
@@ -56,12 +56,12 @@ fold,Method,Strategy,weight,fit_start,fit_end,first_execution_close
 2,Inverse volatility,ETC/VET,0.07289071438990656,2021-07-02,2023-07-01,2023-07-02
 2,Inverse volatility,AAVE/XLM,0.06632115479253792,2021-07-02,2023-07-01,2023-07-02
 3,Optimized reference,Liu 30 / 3w,0.0,2022-01-02,2024-01-01,2024-01-02
-3,Optimized reference,Liu extended / 3w,0.2317332550329434,2022-01-02,2024-01-01,2024-01-02
+3,Optimized reference,Liu extended / 3w,0.23173325503294342,2022-01-02,2024-01-01,2024-01-02
 3,Optimized reference,Donchian B5 / 30d,0.0,2022-01-02,2024-01-01,2024-01-02
 3,Optimized reference,Donchian B5 / 60d,0.0,2022-01-02,2024-01-01,2024-01-02
 3,Optimized reference,Donchian B5 / 90d,0.0,2022-01-02,2024-01-01,2024-01-02
-3,Optimized reference,ETC/VET,0.2065314714136412,2022-01-02,2024-01-01,2024-01-02
-3,Optimized reference,AAVE/XLM,0.5617352735534155,2022-01-02,2024-01-01,2024-01-02
+3,Optimized reference,ETC/VET,0.20653147141364114,2022-01-02,2024-01-01,2024-01-02
+3,Optimized reference,AAVE/XLM,0.5617352735534153,2022-01-02,2024-01-01,2024-01-02
 3,Equal strategy weights,Liu 30 / 3w,0.14285714285714285,2022-01-02,2024-01-01,2024-01-02
 3,Equal strategy weights,Liu extended / 3w,0.14285714285714285,2022-01-02,2024-01-01,2024-01-02
 3,Equal strategy weights,Donchian B5 / 30d,0.14285714285714285,2022-01-02,2024-01-01,2024-01-02
@@ -85,11 +85,11 @@ fold,Method,Strategy,weight,fit_start,fit_end,first_execution_close
 3,Inverse volatility,AAVE/XLM,0.07983873229553104,2022-01-02,2024-01-01,2024-01-02
 4,Optimized reference,Liu 30 / 3w,0.0,2022-07-02,2024-07-01,2024-07-02
 4,Optimized reference,Liu extended / 3w,0.0,2022-07-02,2024-07-01,2024-07-02
-4,Optimized reference,Donchian B5 / 30d,0.43931767517981574,2022-07-02,2024-07-01,2024-07-02
-4,Optimized reference,Donchian B5 / 60d,0.060930985138691204,2022-07-02,2024-07-01,2024-07-02
+4,Optimized reference,Donchian B5 / 30d,0.4393176751798157,2022-07-02,2024-07-01,2024-07-02
+4,Optimized reference,Donchian B5 / 60d,0.060930985138691315,2022-07-02,2024-07-01,2024-07-02
 4,Optimized reference,Donchian B5 / 90d,0.0,2022-07-02,2024-07-01,2024-07-02
-4,Optimized reference,ETC/VET,0.25006537518237976,2022-07-02,2024-07-01,2024-07-02
-4,Optimized reference,AAVE/XLM,0.24968596449911334,2022-07-02,2024-07-01,2024-07-02
+4,Optimized reference,ETC/VET,0.25006537518237965,2022-07-02,2024-07-01,2024-07-02
+4,Optimized reference,AAVE/XLM,0.24968596449911332,2022-07-02,2024-07-01,2024-07-02
 4,Equal strategy weights,Liu 30 / 3w,0.14285714285714285,2022-07-02,2024-07-01,2024-07-02
 4,Equal strategy weights,Liu extended / 3w,0.14285714285714285,2022-07-02,2024-07-01,2024-07-02
 4,Equal strategy weights,Donchian B5 / 30d,0.14285714285714285,2022-07-02,2024-07-01,2024-07-02
@@ -113,11 +113,11 @@ fold,Method,Strategy,weight,fit_start,fit_end,first_execution_close
 4,Inverse volatility,AAVE/XLM,0.10843973687129592,2022-07-02,2024-07-01,2024-07-02
 5,Optimized reference,Liu 30 / 3w,0.0,2023-01-02,2025-01-01,2025-01-02
 5,Optimized reference,Liu extended / 3w,0.0,2023-01-02,2025-01-01,2025-01-02
-5,Optimized reference,Donchian B5 / 30d,0.02453322705824015,2023-01-02,2025-01-01,2025-01-02
-5,Optimized reference,Donchian B5 / 60d,0.5122093262770738,2023-01-02,2025-01-01,2025-01-02
+5,Optimized reference,Donchian B5 / 30d,0.024533227058240428,2023-01-02,2025-01-01,2025-01-02
+5,Optimized reference,Donchian B5 / 60d,0.5122093262770735,2023-01-02,2025-01-01,2025-01-02
 5,Optimized reference,Donchian B5 / 90d,0.0,2023-01-02,2025-01-01,2025-01-02
-5,Optimized reference,ETC/VET,0.36789630254955213,2023-01-02,2025-01-01,2025-01-02
-5,Optimized reference,AAVE/XLM,0.09536114411513395,2023-01-02,2025-01-01,2025-01-02
+5,Optimized reference,ETC/VET,0.367896302549552,2023-01-02,2025-01-01,2025-01-02
+5,Optimized reference,AAVE/XLM,0.09536114411513393,2023-01-02,2025-01-01,2025-01-02
 5,Equal strategy weights,Liu 30 / 3w,0.14285714285714285,2023-01-02,2025-01-01,2025-01-02
 5,Equal strategy weights,Liu extended / 3w,0.14285714285714285,2023-01-02,2025-01-01,2025-01-02
 5,Equal strategy weights,Donchian B5 / 30d,0.14285714285714285,2023-01-02,2025-01-01,2025-01-02
@@ -139,13 +139,13 @@ fold,Method,Strategy,weight,fit_start,fit_end,first_execution_close
 5,Inverse volatility,Donchian B5 / 90d,0.19825327453767416,2023-01-02,2025-01-01,2025-01-02
 5,Inverse volatility,ETC/VET,0.10460505431494245,2023-01-02,2025-01-01,2025-01-02
 5,Inverse volatility,AAVE/XLM,0.09747530510779913,2023-01-02,2025-01-01,2025-01-02
-6,Optimized reference,Liu 30 / 3w,0.06263704280337277,2023-07-02,2025-07-01,2025-07-02
+6,Optimized reference,Liu 30 / 3w,0.06263704280337279,2023-07-02,2025-07-01,2025-07-02
 6,Optimized reference,Liu extended / 3w,0.0,2023-07-02,2025-07-01,2025-07-02
 6,Optimized reference,Donchian B5 / 30d,0.0,2023-07-02,2025-07-01,2025-07-02
-6,Optimized reference,Donchian B5 / 60d,0.37807105553050063,2023-07-02,2025-07-01,2025-07-02
-6,Optimized reference,Donchian B5 / 90d,0.16603426265983523,2023-07-02,2025-07-01,2025-07-02
-6,Optimized reference,ETC/VET,0.30313992198424233,2023-07-02,2025-07-01,2025-07-02
-6,Optimized reference,AAVE/XLM,0.09011771702204908,2023-07-02,2025-07-01,2025-07-02
+6,Optimized reference,Donchian B5 / 60d,0.3780710555305006,2023-07-02,2025-07-01,2025-07-02
+6,Optimized reference,Donchian B5 / 90d,0.16603426265983512,2023-07-02,2025-07-01,2025-07-02
+6,Optimized reference,ETC/VET,0.30313992198424244,2023-07-02,2025-07-01,2025-07-02
+6,Optimized reference,AAVE/XLM,0.09011771702204907,2023-07-02,2025-07-01,2025-07-02
 6,Equal strategy weights,Liu 30 / 3w,0.14285714285714285,2023-07-02,2025-07-01,2025-07-02
 6,Equal strategy weights,Liu extended / 3w,0.14285714285714285,2023-07-02,2025-07-01,2025-07-02
 6,Equal strategy weights,Donchian B5 / 30d,0.14285714285714285,2023-07-02,2025-07-01,2025-07-02
@@ -168,12 +168,12 @@ fold,Method,Strategy,weight,fit_start,fit_end,first_execution_close
 6,Inverse volatility,ETC/VET,0.09881569773628922,2023-07-02,2025-07-01,2025-07-02
 6,Inverse volatility,AAVE/XLM,0.09412558904976598,2023-07-02,2025-07-01,2025-07-02
 7,Optimized reference,Liu 30 / 3w,0.035234432950999935,2024-01-02,2026-01-01,2026-01-02
-7,Optimized reference,Liu extended / 3w,0.053061772259629866,2024-01-02,2026-01-01,2026-01-02
+7,Optimized reference,Liu extended / 3w,0.05306177225962986,2024-01-02,2026-01-01,2026-01-02
 7,Optimized reference,Donchian B5 / 30d,0.0,2024-01-02,2026-01-01,2026-01-02
 7,Optimized reference,Donchian B5 / 60d,0.0,2024-01-02,2026-01-01,2026-01-02
 7,Optimized reference,Donchian B5 / 90d,0.5241983825787626,2024-01-02,2026-01-01,2026-01-02
 7,Optimized reference,ETC/VET,0.2645223576171886,2024-01-02,2026-01-01,2026-01-02
-7,Optimized reference,AAVE/XLM,0.12298305459341899,2024-01-02,2026-01-01,2026-01-02
+7,Optimized reference,AAVE/XLM,0.12298305459341902,2024-01-02,2026-01-01,2026-01-02
 7,Equal strategy weights,Liu 30 / 3w,0.14285714285714285,2024-01-02,2026-01-01,2026-01-02
 7,Equal strategy weights,Liu extended / 3w,0.14285714285714285,2024-01-02,2026-01-01,2026-01-02
 7,Equal strategy weights,Donchian B5 / 30d,0.14285714285714285,2024-01-02,2026-01-01,2026-01-02
@@ -195,13 +195,13 @@ fold,Method,Strategy,weight,fit_start,fit_end,first_execution_close
 7,Inverse volatility,Donchian B5 / 90d,0.20375892714717542,2024-01-02,2026-01-01,2026-01-02
 7,Inverse volatility,ETC/VET,0.09388527497143216,2024-01-02,2026-01-01,2026-01-02
 7,Inverse volatility,AAVE/XLM,0.09266655592652635,2024-01-02,2026-01-01,2026-01-02
-8,Optimized reference,Liu 30 / 3w,0.017825545296614433,2024-07-02,2026-07-01,2026-07-02
-8,Optimized reference,Liu extended / 3w,0.12805519482219782,2024-07-02,2026-07-01,2026-07-02
+8,Optimized reference,Liu 30 / 3w,0.017825545296614443,2024-07-02,2026-07-01,2026-07-02
+8,Optimized reference,Liu extended / 3w,0.12805519482219785,2024-07-02,2026-07-01,2026-07-02
 8,Optimized reference,Donchian B5 / 30d,0.0,2024-07-02,2026-07-01,2026-07-02
 8,Optimized reference,Donchian B5 / 60d,0.0,2024-07-02,2026-07-01,2026-07-02
-8,Optimized reference,Donchian B5 / 90d,0.4793788916840583,2024-07-02,2026-07-01,2026-07-02
-8,Optimized reference,ETC/VET,0.3092270227219607,2024-07-02,2026-07-01,2026-07-02
-8,Optimized reference,AAVE/XLM,0.0655133454751686,2024-07-02,2026-07-01,2026-07-02
+8,Optimized reference,Donchian B5 / 90d,0.4793788916840584,2024-07-02,2026-07-01,2026-07-02
+8,Optimized reference,ETC/VET,0.30922702272196073,2024-07-02,2026-07-01,2026-07-02
+8,Optimized reference,AAVE/XLM,0.06551334547516861,2024-07-02,2026-07-01,2026-07-02
 8,Equal strategy weights,Liu 30 / 3w,0.14285714285714285,2024-07-02,2026-07-01,2026-07-02
 8,Equal strategy weights,Liu extended / 3w,0.14285714285714285,2024-07-02,2026-07-01,2026-07-02
 8,Equal strategy weights,Donchian B5 / 30d,0.14285714285714285,2024-07-02,2026-07-01,2026-07-02

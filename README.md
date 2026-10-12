@@ -6,7 +6,7 @@ Six paper-inspired strategy studies and a final statistical-arbitrage portfolio,
 
 **Follow this order: prepare the data if needed → run all six research-paper notebooks → run the final portfolio notebook.** The bundled inputs let you begin with the research notebooks without downloading data again. If you need to acquire or refresh data, complete that step before running any research notebook.
 
-The final portfolio fits capital allocations among seven previously nominated variants using the Backtest histories, freezes those allocations, and starts a fresh 100,000-USDT account at the Validation boundary with a 20-bps trading fee. Earlier validation performance informed those nominations, so the results are **historical development evidence**. The portfolio notebook includes funded execution, allocation comparisons, explicit cost scenarios, factor regressions, a BTC hedge, chronological walk-forward analysis, and Monte Carlo return-path simulations.
+The final portfolio fits capital allocations among seven previously nominated variants using the Backtest histories, freezes those allocations, and starts a fresh 100,000-USDT account at the Validation boundary with a 20-bps all-in transaction cost. Earlier validation performance informed those nominations, so the results are **historical development evidence**. The portfolio notebook includes funded execution, allocation comparisons, explicit cost scenarios, factor regressions, a BTC hedge, chronological walk-forward analysis, and Monte Carlo return-path simulations.
 
 ## Notebook order
 
@@ -127,73 +127,85 @@ This is the project's own later-sample application and universe comparison. It i
 
 ## Saved results: strategies, portfolios, and uncertainty
 
-The results below summarize the final notebook's saved outputs. **Money made means simulated net profit in USDT**, with each account starting from **100,000 USDT**. Unless otherwise stated, performance covers **Validation: January 1, 2025–September 17, 2026 (625 days)**. Sharpe, volatility, and CAGR use 365-day annualization. Maximum drawdown is the largest peak-to-trough account decline, shown as a negative percentage. Returns and profits already include the stated costs.
+The results below summarize the final notebook's saved outputs. **Money made means simulated net profit in USDT**, with each account starting from **100,000 USDT**. Unless otherwise stated, performance covers **Validation: January 1, 2025–September 17, 2026 (625 days)**. **Headline Sharpe uses the course convention: daily mean divided by daily sample standard deviation, multiplied by √252**, with zero risk-free return. All strategy notebooks also report √365 Sharpe on the same daily observations; no weekend returns are removed. Volatility, Sortino, CAGR, turnover, borrowing accrual, and linear annual alpha retain their documented 365-day calendar convention. Maximum drawdown is the largest peak-to-trough account decline, shown as a negative percentage. Returns and profits already include the stated costs.
 
 ### Highest Validation Sharpe among the standalone research candidates
 
-**Liu extended / 3w**, the three-week momentum strategy in the extended Binance cap-matched universe, has the highest Validation net Sharpe among the seven funded standalone candidates rebuilt in the final notebook: **1.050**. It earns **56,640.19 USDT** on the simulated 100,000-USDT account, ends at **156,640.19 USDT**, returns **56.64%**, and has a **−24.40%** maximum drawdown. Its annualized return (CAGR) is **29.96%**. This ranking describes the saved Validation outcomes; it is not the criterion used to fit the final portfolio allocation.
+**Liu extended / 3w**, the three-week momentum strategy in the extended Binance cap-matched universe, has the highest Validation net Sharpe among the seven funded standalone candidates rebuilt in the final notebook: **0.872**. It earns **56,640.19 USDT** on the simulated 100,000-USDT account, ends at **156,640.19 USDT**, returns **56.64%**, and has a **−24.40%** maximum drawdown. Its annualized return (CAGR) is **29.96%**. This ranking describes the saved Validation outcomes; it is not the criterion used to fit the final portfolio allocation.
 
 **That result is conditional on the simulated long and short baskets being feasible.** The baseline does not include historical borrow charges or verify borrow availability for each extended-universe constituent; the result is a research outcome, not a claim that this profit could have been earned in live trading.
 
-| Funded standalone strategy | Net Sharpe | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
+| Funded standalone strategy | Net Sharpe (252) | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
 |---|---|---|---|---|---|---|
-| Liu 30 / 3w | 0.752 | 31.22% | 17.19% | −26.12% | 31,217.39 | 131,217.39 |
-| **Liu extended / 3w** | **1.050** | **56.64%** | **29.96%** | **−24.40%** | **56,640.19** | **156,640.19** |
-| Donchian B5 / 30d | 0.197 | 2.50% | 1.45% | −14.44% | 2,496.22 | 102,496.22 |
-| Donchian B5 / 60d | 0.147 | 1.65% | 0.96% | −11.31% | 1,649.76 | 101,649.76 |
-| Donchian B5 / 90d | 0.132 | 1.33% | 0.78% | −8.32% | 1,334.62 | 101,334.62 |
-| ETC/VET | 0.511 | 16.78% | 9.48% | −14.65% | 16,779.47 | 116,779.47 |
-| AAVE/XLM | 0.947 | 41.43% | 22.44% | −27.99% | 41,428.78 | 141,428.78 |
+| Liu 30 / 3w | 0.625 | 31.22% | 17.19% | −26.12% | 31,217.39 | 131,217.39 |
+| **Liu extended / 3w** | **0.872** | **56.64%** | **29.96%** | **−24.40%** | **56,640.19** | **156,640.19** |
+| Donchian B5 / 30d | 0.164 | 2.50% | 1.45% | −14.44% | 2,496.22 | 102,496.22 |
+| Donchian B5 / 60d | 0.122 | 1.65% | 0.96% | −11.31% | 1,649.76 | 101,649.76 |
+| Donchian B5 / 90d | 0.110 | 1.33% | 0.78% | −8.32% | 1,334.62 | 101,334.62 |
+| ETC/VET | 0.424 | 16.78% | 9.48% | −14.65% | 16,779.47 | 116,779.47 |
+| AAVE/XLM | 0.787 | 41.43% | 22.44% | −27.99% | 41,428.78 | 141,428.78 |
 
-These accounts include **20 bps trading fees**. The seven candidates come from three of the six research families. The individual paper notebooks contain their wider parameter grids, benchmarks, and original accounting conventions; the table uses the final notebook's funded accounts for a consistent comparison. Source: [standalone metrics](output/crypto_stat_arb_project_final/standalone/standalone_metrics.csv).
+For Liu extended / 3w, the BTC-relative alpha HAC t-statistic is **1.54**, with a **95% linear annual alpha interval of [-8.18%, 67.65%]**. Source: [constituent alpha diagnostics](output/crypto_stat_arb_project_final/constituent_factor_metrics.csv).
+
+These accounts include **20 bps all-in trading costs**. The seven candidates come from three of the six research families. The individual paper notebooks contain their wider parameter grids, benchmarks, and original accounting conventions; the table uses the final notebook's funded accounts for a consistent comparison. Source: [standalone metrics](output/crypto_stat_arb_project_final/standalone/standalone_metrics.csv).
 
 ### Final portfolio and allocation comparisons
 
-The **optimized reference** was nominated using allocation-fit-window Sharpe from the Backtest period. Its funded, coin-level account earns **17,082.61 USDT**, with **1.258 Sharpe** and **−6.51% maximum drawdown** after 20 bps trading fees. Its annualized volatility is **7.55%**, Sortino is **1.906**, and trading fees total **12,562.93 USDT**.
+The **optimized reference** was nominated using allocation-fit-window Sharpe from the Backtest period. Its funded, coin-level account earns **17,082.61 USDT**, with **1.045 Sharpe** and **−6.51% maximum drawdown** after 20 bps all-in trading costs. Its annualized volatility is **7.55%**, Sortino is **1.906**, and all-in trading costs total **12,562.93 USDT**.
 
-**Equal family weights** has the highest observed Validation Sharpe among the five portfolio methods shown below: **1.465**, with **27,401.59 USDT** net profit and **−9.87%** maximum drawdown. It also has the highest Sharpe among these methods under the added slippage-and-borrowing scenario: **0.895**, with **15,542.01 USDT** profit and **−13.53%** maximum drawdown. These are retrospective comparisons; the README does not replace the Backtest-nominated reference with the Validation winner.
+**Alpha remains uncertain.** Against daily BTC returns, the reference has beta **0.058**, linear annual alpha **9.63%**, **HAC t = 1.77**, and a **95% alpha interval of [-1.06%, 20.33%]** (raw p = 0.077). The interval includes zero, so the historical profit does not establish positive alpha. The regression uses 20 HAC lags, a finite-sample correction, and Student-t critical values; annual alpha and its bounds multiply the daily intercept by 365. These are pointwise intervals conditional on the chosen strategies, not an adjustment for the earlier research search. We do not alter the strategy to reach a t-statistic of 2.
 
-| Portfolio method, 20 bps fees | Sharpe | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
+**Equal family weights** has the highest observed Validation Sharpe among the five portfolio methods shown below: **1.217**, with **27,401.59 USDT** net profit and **−9.87%** maximum drawdown. It also has the highest Sharpe among these methods under the added slippage-and-borrowing scenario: **0.744**, with **15,542.01 USDT** profit and **−13.53%** maximum drawdown. These are retrospective comparisons; the README does not replace the Backtest-nominated reference with the Validation winner.
+
+| Portfolio method, 20 bps all-in cost | Sharpe (252) | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
 |---|---|---|---|---|---|---|
-| Optimized reference | 1.258 | 17.08% | 9.65% | −6.51% | 17,082.61 | 117,082.61 |
-| Equal strategy weights | 1.410 | 23.57% | 13.16% | −9.09% | 23,572.98 | 123,572.98 |
-| **Equal family weights** | **1.465** | **27.40%** | **15.19%** | **−9.87%** | **27,401.59** | **127,401.59** |
-| Inverse volatility | 1.037 | 13.65% | 7.76% | −7.19% | 13,651.23 | 113,651.23 |
-| Reference with BTC hedge | 1.405 | 18.66% | 10.51% | −6.27% | 18,657.51 | 118,657.51 |
+| Optimized reference | 1.045 | 17.08% | 9.65% | −6.51% | 17,082.61 | 117,082.61 |
+| Equal strategy weights | 1.171 | 23.57% | 13.16% | −9.09% | 23,572.98 | 123,572.98 |
+| **Equal family weights** | **1.217** | **27.40%** | **15.19%** | **−9.87%** | **27,401.59** | **127,401.59** |
+| Inverse volatility | 0.861 | 13.65% | 7.76% | −7.19% | 13,651.23 | 113,651.23 |
+| Reference with BTC hedge | 1.168 | 18.66% | 10.51% | −6.27% | 18,657.51 | 118,657.51 |
 
 Sources: [funded reference summary](output/crypto_stat_arb_project_final/single_account/portfolio_summary.csv), [all portfolio evaluation metrics](output/crypto_stat_arb_project_final/all_evaluation_metrics.csv), and [allocation selection and weights](output/crypto_stat_arb_project_final/final_selection.json). The selected sleeve-return blend has slightly different accounting from the funded coin-level account; the portfolio figures here consistently use the funded account exports.
 
 ### How trading costs change the reference result
 
-The main added-cost scenario retains the **20 bps trading fee**, adds **10 bps slippage per traded notional**, and charges **5% annual borrowing on external net short exposure**. Its simulated reference profit falls to **9,532.97 USDT**, Sharpe falls to **0.743**, and maximum drawdown increases to **−8.02%**.
+The **primary scenario is 20 bps all-in trading cost**, approximately 7 bps commission plus 13 bps slippage. The final notebook retains extra costs **only as sensitivity tests**. The full stress scenario retains the **20 bps all-in trading cost**, adds **10 bps slippage per traded notional**, and charges **5% annual borrowing on external net short exposure**. The extra 10 bps is a stress beyond the baseline slippage allowance, not a correction for omitted slippage. Its simulated reference profit falls to **9,532.97 USDT**, Sharpe falls to **0.617**, and maximum drawdown increases to **−8.02%**.
 
-| Reference cost scenario | Sharpe | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
+| Reference cost scenario | Sharpe (252) | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
 |---|---|---|---|---|---|---|
-| 20 bps trading fee | 1.258 | 17.08% | 9.65% | −6.51% | 17,082.61 | 117,082.61 |
-| Trading fee + 10 bps slippage | 0.825 | 10.70% | 6.12% | −7.69% | 10,698.75 | 110,698.75 |
-| Trading fee + slippage + 5% annual short borrowing | 0.743 | 9.53% | 5.46% | −8.02% | 9,532.97 | 109,532.97 |
+| 20 bps all-in trading cost | 1.045 | 17.08% | 9.65% | −6.51% | 17,082.61 | 117,082.61 |
+| Sensitivity: baseline + 10 bps extra slippage | 0.685 | 10.70% | 6.12% | −7.69% | 10,698.75 | 110,698.75 |
+| Sensitivity: baseline + extra slippage + 5% annual short borrowing | 0.617 | 9.53% | 5.46% | −8.02% | 9,532.97 | 109,532.97 |
 
 Source: [cost-scenario results](output/crypto_stat_arb_project_final/additional_costs/cost_comparison.csv). Profit is final capital minus starting capital; the reported fees, slippage, and borrowing are already deducted from account performance.
+
+| Reference scenario | BTC alpha HAC t | Linear annual alpha | 95% alpha interval |
+|---|---:|---:|---|
+| Primary: 20 bps all-in | 1.77 | 9.63% | [-1.06%, 20.33%] |
+| Sensitivity: extra 10 bps | 1.17 | 6.36% | [-4.31%, 17.03%] |
+| Sensitivity: extra 10 bps + borrow | 1.06 | 5.74% | [-4.94%, 16.42%] |
+
+Source: [HAC factor results](output/crypto_stat_arb_project_final/portfolio_factor_metrics.csv). The reference intervals include zero under all three cost scenarios.
 
 ### Walk-forward results
 
 The separate walk-forward study refits allocations using a **24-month training window before each six-month test fold**. Its aggregate evaluation runs from **January 2, 2023–September 17, 2026 (1,355 days)**, so it covers a different period from the fixed-allocation Validation tables.
 
-The optimized reference returns **41.65%** with **0.821 Sharpe** and **−16.99% maximum drawdown** under the 20 bps baseline. With the added slippage and borrowing, it returns **14.18%**, with **0.350 Sharpe** and **−21.23% maximum drawdown**. Under that added-cost scenario, inverse-volatility allocation has the highest observed walk-forward Sharpe among the four allocation methods, at **0.647**. These results show how the rankings and risks change across evaluation regimes. Source: [walk-forward aggregate metrics](output/crypto_stat_arb_project_final/walk_forward_aggregate_metrics.csv).
+The optimized reference returns **41.65%** with **0.682 Sharpe** and **−16.99% maximum drawdown** under the 20 bps baseline. With the added slippage and borrowing, it returns **14.18%**, with **0.291 Sharpe** and **−21.23% maximum drawdown**. Under that added-cost scenario, inverse-volatility allocation has the highest observed walk-forward Sharpe among the four allocation methods, at **0.538**. These results show how the rankings and risks change across evaluation regimes. Source: [walk-forward aggregate metrics](output/crypto_stat_arb_project_final/walk_forward_aggregate_metrics.csv).
 
 ### Monte Carlo simulations
 
 The final notebook runs a **circular stationary bootstrap with geometric block lengths**, resampling observed daily net account returns in blocks to retain some short-term dependence. The main experiment uses **25,000 paths per portfolio and cost scenario**, a **625-day simulated horizon**, a **20-day expected block length**, and **100,000 USDT initial capital**. The return series already include scenario costs. A separate sensitivity check uses **5,000 paths** at expected block lengths of **10, 20, and 40 days**.
 
-The table below uses the full **20 bps fee + 10 bps slippage + 5% annual short-borrowing** scenario. The Validation source has 625 observed days; the walk-forward source has 1,355 observed days, from which the experiment also simulates 625-day paths.
+The table below uses the **primary 20 bps all-in baseline**. Extra-cost Monte Carlo results remain available as sensitivities in the saved summary. The Validation source has 625 observed days; the walk-forward source has 1,355 observed days, from which the experiment also simulates 625-day paths.
 
 | Historical return source and portfolio | Median final capital (USDT) | 5th–95th percentile final capital (USDT) | Paths ending below 100,000 USDT | Paths with drawdown ≥20% | Median maximum drawdown magnitude |
 |---|---|---|---|---|---|
-| Validation / optimized reference | 109,439 | 93,720–128,908 | 17.39% | 0.26% | 7.17% |
-| Validation / reference with BTC hedge | 110,494 | 95,187–129,379 | 13.86% | 0.09% | 6.63% |
-| Walk-forward / optimized reference | 105,636 | 80,886–140,470 | 36.68% | 20.63% | 14.40% |
+| Validation / optimized reference | 116,961 | 100,109–137,945 | 4.88% | 0.03% | 6.03% |
+| Validation / reference with BTC hedge | 118,522 | 102,071–138,773 | 3.12% | 0.01% | 5.49% |
+| Walk-forward / optimized reference | 116,739 | 89,666–155,193 | 16.99% | 8.63% | 11.81% |
 
-The reference's median simulated profit is **9,439 USDT** using Validation returns and **5,636 USDT** using walk-forward returns. The broader walk-forward distribution also has a larger frequency of terminal losses and deep drawdowns. These are conditional, retrospective return-path simulations: they do not simulate new asset prices, refit allocations, or repeat candidate selection. The percentile ranges and loss frequencies describe these bootstrap samples rather than forecasts or independent evidence of future profitability.
+The reference's median simulated profit is **16,961 USDT** using Validation returns and **16,739 USDT** using walk-forward returns. The broader walk-forward distribution also has a larger frequency of terminal losses and deep drawdowns. These are conditional, retrospective return-path simulations: they do not simulate new asset prices, refit allocations, or repeat candidate selection. The percentile ranges and loss frequencies describe these bootstrap samples rather than forecasts or independent evidence of future profitability.
 
 Sources: [Monte Carlo summary](output/crypto_stat_arb_project_final/monte_carlo/summary.csv), [simulation settings](output/crypto_stat_arb_project_final/monte_carlo/manifest.json), [block-length sensitivity](output/crypto_stat_arb_project_final/monte_carlo/block_length_sensitivity.csv), and [interpretation](output/crypto_stat_arb_project_final/monte_carlo/interpretation.md).
 
@@ -237,22 +249,31 @@ These weights are fractions of account equity: positive is long, negative is sho
 
 The notebooks document where their implementations depart from the papers. A fixed, retrospectively chosen CMC universe is not a historical top-30 or a survivorship-free universe. USD provider aggregates and Binance USDT quotes are distinct price sources. Event-review inputs address documented cases rather than establishing complete execution coverage.
 
-The final notebook's main scenario adds 10 bps slippage and 5% annual borrowing to the 20-bps trading fee. Short availability, daily-close fills, funding, margin, and market impact remain research assumptions. Monte Carlo paths resample realized net returns; they do not generate fresh price histories or rerun strategy selection. Historical bootstrap and walk-forward results remain conditional on prior candidate selection.
+The final notebook leads with the 20-bps all-in transaction cost. Extra 10 bps slippage and 5% annual borrowing are sensitivity tests only. Short availability, daily-close fills, funding, margin, and market impact remain research assumptions. Monte Carlo paths resample realized net returns; they do not generate fresh price histories or rerun strategy selection. Historical bootstrap and walk-forward results remain conditional on prior candidate selection.
 
 The final portfolio's Backtest returns serve as fitting inputs and in-sample diagnostics. Its funded account charts, cost scenarios, and fixed-allocation comparisons cover Validation only. No fixed allocation fitted through December 2024 is presented as an investable capital curve beginning in 2021. The separate walk-forward study refits weights before each future fold. Historical hedge calibration is retained internally, without exporting its fitted Backtest replay as growth.
 
 Paper citations and method references appear in the corresponding notebooks. This repository is for research and educational use.
 
+## Outlook: reducing the cost drag
+
+**Trading costs consume a substantial share of the simulated gross P&L, and reducing that drag is ongoing research work.** For the primary reference, roughly **29,645.54 USDT gross P&L** on the realized positions is reduced by **12,562.93 USDT all-in trading costs** (about **42.4%**), leaving **17,082.61 USDT net profit**. External traded notional averages approximately **9.0% of prior-day NAV per day**.
+
+In the extra-slippage-and-borrow sensitivity, about **28,888.43 USDT gross P&L** is reduced by **19,355.46 USDT total modeled costs** (about **67.0%**): 12,140.53 transaction costs, 6,070.26 extra slippage, and 1,144.67 borrowing. That leaves **9,532.97 USDT net profit**. These are gross/net reconciliations on each scenario's realized account path, not separate zero-cost backtests; cost-adjusted NAV changes later order sizes.
+
+The next research priority is to investigate lower turnover through less frequent rebalancing or wider trading thresholds, with hypotheses and evaluation rules fixed before testing. No such strategy changes are made in this reporting update. Any future change must be assessed on data not used to tune it, with return, drawdown, costs, and alpha uncertainty reported together. A higher t-statistic alone will not justify adopting a change.
+
 ## Verification
 
 - All nine notebooks executed successfully; downloaders used their default offline modes.
+- Both Sharpe conventions were reconciled across 24 exported metric tables. The reference HAC t-statistic and 95% interval were independently checked against statsmodels. The selected allocation and baseline/extra-cost daily accounts match the previous run within floating-point precision.
 - All 136 code cells passed syntax checks. Spelling, Markdown tables, local notebook links, comments, and chart presentation were reviewed; the documented Donchian sizing cap now matches the existing 100% code setting.
 - Saved notebook outputs contain no Python/pandas warnings, errors, or machine-specific filesystem addresses.
-- The final text and formatting cleanup preserved executable strategy logic, all 834 bundled input files, and all 439 CSV exports. Chart files and output manifests were also validated.
+- The reporting update preserves the trading rules and bundled market-data inputs. Performance exports and charts include the revised reporting conventions.
 - Checksums verified for 718 USDT candle partitions, 55 cap-evidence files, and 25 reviewed event archives. The original CMC input files were unchanged.
 - The final reference exports 625 daily Validation coin-target rows. Its funded account starts with 100,000 USDT in cash after allocation fitting, and the same Validation dates and gross-exposure limit apply to all fixed-allocation comparisons.
 - Current source fingerprints match the five strategy manifests that record them. No obsolete experiment output directories or excluded legacy programs remain in the upload folder.
 
 ## Author
 
-Surya Shankar R, Maneesh Karunakaran and Mayank Pal
+Surya Shankar R

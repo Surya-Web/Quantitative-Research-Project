@@ -1303,9 +1303,9 @@
     "backtest_last_date": "2024-12-31"
   },
   "environment": {
-    "python": "3.13.13",
-    "numpy": "2.5.1",
-    "pandas": "3.0.5",
+    "python": "3.13.2",
+    "numpy": "2.4.2",
+    "pandas": "3.0.3",
     "statsmodels": "0.14.6"
   },
   "figures": [
@@ -1320,5 +1320,5 @@
     "calendar_returns"
   ],
   "validation_previously_explored": true,
-  "notebook_source_sha256": "924105835ff2c054d270c38b3fff2e365dcaa573df584273dd699079d64c4902"
+  "notebook_source_sha256": "6fe64eaf6d0f6a575df86d0a546ea77ef11222a44f6224e55789bf219f09e10a"
 }
