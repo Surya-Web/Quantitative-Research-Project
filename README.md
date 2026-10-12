@@ -134,4 +134,4 @@ Verified on October 11, 2026 using Python 3.13 and the versions in `requirements
 
 ## Author
 
-Maneesh Karunakaran
+Surya Shankar R, Maneesh Karunakaran and Mayank Pal
