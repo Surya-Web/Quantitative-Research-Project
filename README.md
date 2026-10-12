@@ -2,36 +2,27 @@
 
 Six paper-inspired strategy studies and a final statistical-arbitrage portfolio, with bundled market data and reproducible research outputs. Each notebook contains its own implementation, assumptions, diagnostics, and references.
 
+**Follow this order: prepare the data if needed → run all six research-paper notebooks → run the final portfolio notebook.** The bundled inputs let you begin with the research notebooks without downloading data again. If you need to acquire or refresh data, complete that step before running any research notebook.
+
 The final portfolio fits capital allocations among seven previously nominated variants using the Backtest histories, freezes those allocations, and starts a fresh 100,000-USDT account at the Validation boundary with a 20-bps trading fee. Earlier validation performance informed those nominations, so the results are **historical development evidence**. The portfolio notebook includes funded execution, allocation comparisons, explicit cost scenarios, factor regressions, a BTC hedge, chronological walk-forward analysis, and Monte Carlo return-path simulations.
 
-## Research dates
+## Notebook order
 
-Every strategy and portfolio notebook uses the same manually declared dates:
+Use the table from top to bottom. **Stage 1 is optional when using the bundled data; complete all six studies in Stage 2 before moving to Stage 3.** The research studies document the individual strategies and their results; the final notebook brings selected variants together into portfolio analysis.
 
-```python
-SAMPLE_START = "2021-01-01"
-SAMPLE_END = "2026-09-17"
-BACKTEST_START, BACKTEST_END = "2021-01-02", "2024-12-31"
-VALIDATION_START, VALIDATION_END = "2025-01-01", "2026-09-17"
-```
+| Order | Stage | Notebook | What to do or learn | Output folder |
+|---|---|---|---|---|
+| 1 | Data preparation, if needed | [Data_Download_30Coin_Universe.ipynb](Data_Download_30Coin_Universe.ipynb) | Audit or refresh the shared CMC OHLCV and market-cap/supply panels | `OHLCV_Market_Cap_Data/` |
+| 2 | Data preparation, if needed | [Data_Download_3731Coins.ipynb](Data_Download_3731Coins.ipynb) | Run offline acquisition tests or acquire Binance historical candle data | `Coin_Prices/` |
+| 3 | Research study 1 of 6 | [Catching_Crypto_Trends_Zarattini_et_al.ipynb](Catching_Crypto_Trends_Zarattini_et_al.ipynb) | Study Donchian trend following and breadth variants | `output/catching_crypto_trends/` |
+| 4 | Research study 2 of 6 | [Pairs_trading Palazzi_et_al.ipynb](Pairs_trading%20Palazzi_et_al.ipynb) | Study cointegration screening and spread trading; refresh pair-selection provenance | `output/palazzi_pairs/` |
+| 5 | Research study 3 of 6 | [Technical_Trading_Rules_Grobys_et_al.ipynb](Technical_Trading_Rules_Grobys_et_al.ipynb) | Study moving-average trading rules | `output/technical_trading_rules/` |
+| 6 | Research study 4 of 6 | [Knowing_When_To_Hold_Stephan_Hubrich.ipynb](Knowing_When_To_Hold_Stephan_Hubrich.ipynb) | Study cross-sectional momentum | `output/hubrich_factors/` |
+| 7 | Research study 5 of 6 | [Common_Risk_Factors_Liu_et_al.ipynb](Common_Risk_Factors_Liu_et_al.ipynb) | Study nine long-short sorts across CMC and Binance universes | `output/Common_Risk_Factors_Liu_et_al/` |
+| 8 | Research study 6 of 6 | [Trading_Vol_and_Liquidity_Bianchi_et_al.ipynb](Trading_Vol_and_Liquidity_Bianchi_et_al.ipynb) | Study volume-conditioned reversal and liquidity provision | `output/liquidity_provision/` |
+| 9 | Final portfolio, run last | [Crypto_Stat_Arb_Project_Final.ipynb](Crypto_Stat_Arb_Project_Final.ipynb) | Combine selected variants and examine allocation, funded execution, costs, and uncertainty | `output/crypto_stat_arb_project_final/` |
 
-The evaluation contains 1,460 backtest days and 625 validation days, approximately a 70/30 chronological split. September 17 is the last completed date in the bundled Binance snapshot. The CMC files include later observations; analyses explicitly slice them to the common endpoint. Signal warm-up stays within the declared evaluation calendar according to each notebook's documented account convention.
-
-## Notebooks
-
-| Notebook | Purpose | Research outputs |
-|---|---|---|
-| [Catching_Crypto_Trends_Zarattini_et_al.ipynb](Catching_Crypto_Trends_Zarattini_et_al.ipynb) | Donchian trend following and breadth variants | `output/catching_crypto_trends/` |
-| [Pairs_trading Palazzi_et_al.ipynb](Pairs_trading%20Palazzi_et_al.ipynb) | Cointegration screening and spread trading | `output/palazzi_pairs/` |
-| [Technical_Trading_Rules_Grobys_et_al.ipynb](Technical_Trading_Rules_Grobys_et_al.ipynb) | Moving-average trading rules | `output/technical_trading_rules/` |
-| [Knowing_When_To_Hold_Stephan_Hubrich.ipynb](Knowing_When_To_Hold_Stephan_Hubrich.ipynb) | Cross-sectional momentum | `output/hubrich_factors/` |
-| [Common_Risk_Factors_Liu_et_al.ipynb](Common_Risk_Factors_Liu_et_al.ipynb) | Nine long-short sorts across CMC and Binance universes | `output/Common_Risk_Factors_Liu_et_al/` |
-| [Trading_Vol_and_Liquidity_Bianchi_et_al.ipynb](Trading_Vol_and_Liquidity_Bianchi_et_al.ipynb) | Volume-conditioned reversal and liquidity provision | `output/liquidity_provision/` |
-| [Crypto_Stat_Arb_Project_Final.ipynb](Crypto_Stat_Arb_Project_Final.ipynb) | Combined portfolios, execution, and uncertainty | `output/crypto_stat_arb_project_final/` |
-| [Data_Download_30Coin_Universe.ipynb](Data_Download_30Coin_Universe.ipynb) | Audit or refresh the shared CMC panels | `OHLCV_Market_Cap_Data/` |
-| [Data_Download_3731Coins.ipynb](Data_Download_3731Coins.ipynb) | Binance archive acquisition and offline regression tests | `Coin_Prices/` |
-
-## Run from a clone or downloaded ZIP
+## Set up the repository
 
 After downloading a ZIP from GitHub, extract it completely and open the extracted repository folder as your IDE project. On Windows, right-click the ZIP and choose **Extract All**; do not open an `.ipynb` directly from inside the archive, which can create a temporary notebook copy without its data files. Keep the original folder structure. The repository root is the folder containing `README.md` and the notebooks, even if GitHub names it something like `your-repository-main`.
 
@@ -74,12 +65,42 @@ print("Market-cap file found:",
 
 If the file is present in the extracted folder but this check says `False`, correct the kernel's working directory and restart it. If the file is absent from the ZIP, restore the bundled input files in the repository. No path expression can recover a file that was not included in the download.
 
-1. The bundled inputs are sufficient for offline strategy runs. Data downloads are optional; both downloaders default to `RUN_DOWNLOAD = False`.
-2. Open a strategy notebook, restart its kernel, and run all cells in order. Each run updates that study's stable output folder.
-3. Run the pairs notebook before the final portfolio to refresh its supplementary selection provenance. The final notebook rebuilds its signals and accounts from the bundled inputs rather than importing another notebook or a private Python module.
-4. Run `Crypto_Stat_Arb_Project_Final.ipynb` to regenerate the final portfolio's charts, tables, execution histories, and Monte Carlo results.
+## Run the notebooks in three stages
+
+### Stage 1 — Prepare the data, if needed
+
+If the bundled input files are present and you want to reproduce the published sample, proceed directly to Stage 2. You can also run both data notebooks with their default `RUN_DOWNLOAD = False` settings to audit the CMC files and run the Binance downloader's offline tests.
+
+If you need to acquire or refresh provider data, run the two data notebooks first, in the order shown in the table. Enable `RUN_DOWNLOAD = True` in the relevant notebook, restart its kernel, and run all cells in order. Confirm that the required inputs are available before beginning the research studies. The CMC downloader publishes both shared CSV panels; the Binance downloader produces a separate acquisition run.
 
 Refreshing provider data requires deliberately enabling `RUN_DOWNLOAD`. A full Binance acquisition is large and can take hours. Fresh acquisition runs retain separate source identifiers for provenance; the published strategy output folders have no timestamp or random suffix.
+
+The published Binance analyses use the frozen source run `20260918T174517572465Z`. Downloading a new run does not automatically switch those analyses to it. To study refreshed data, review the source-run settings, input checksums, and declared research dates in the notebooks before running them.
+
+### Stage 2 — Run all six research-paper notebooks
+
+Run the six research studies in table order, from **Catching Crypto Trends** through **Trading Volume and Liquidity**. For each notebook, restart its kernel and run every cell from top to bottom before opening the next study. Read its assumptions, diagnostics, and results to understand how that strategy behaves on the shared research sample. Each completed run refreshes the study's output folder listed in the table.
+
+This is the recommended reading and execution sequence for the individual studies. In particular, run the pairs notebook before the final portfolio to refresh its supplementary selection provenance. Completing all six studies gives you the context for the strategy comparisons and candidate choices discussed in the final notebook.
+
+### Stage 3 — Run the final portfolio notebook last
+
+After completing all six research studies, open [Crypto_Stat_Arb_Project_Final.ipynb](Crypto_Stat_Arb_Project_Final.ipynb), restart its kernel, and run all cells in order. It combines seven nominated variants from the Liu factors, Donchian trends, and pairs-trading families, then examines allocations, funded execution, trading costs, market exposure, walk-forward results, and Monte Carlo uncertainty.
+
+The final notebook rebuilds its signals and accounts from the bundled inputs rather than importing another notebook or a private Python module. The six studies provide the research context; the portfolio uses selected variants from three of those families. Its regenerated charts, tables, execution histories, and Monte Carlo results appear in `output/crypto_stat_arb_project_final/`.
+
+## Research dates
+
+Every strategy and portfolio notebook uses the same manually declared dates:
+
+```python
+SAMPLE_START = "2021-01-01"
+SAMPLE_END = "2026-09-17"
+BACKTEST_START, BACKTEST_END = "2021-01-02", "2024-12-31"
+VALIDATION_START, VALIDATION_END = "2025-01-01", "2026-09-17"
+```
+
+The evaluation contains 1,460 backtest days and 625 validation days, approximately a 70/30 chronological split. September 17 is the last completed date in the bundled Binance snapshot. The CMC files include later observations; analyses explicitly slice them to the common endpoint. Signal warm-up stays within the declared evaluation calendar according to each notebook's documented account convention.
 
 ## Input files
 
@@ -121,7 +142,6 @@ The final portfolio's Backtest returns serve as fitting inputs and in-sample dia
 Paper citations and method references appear in the corresponding notebooks. This repository is for research and educational use.
 
 ## Verification
-
 
 - All nine notebooks executed successfully; downloaders used their default offline modes.
 - All 136 code cells passed syntax checks. Spelling, Markdown tables, local notebook links, comments, and chart presentation were reviewed; the documented Donchian sizing cap now matches the existing 100% code setting.
