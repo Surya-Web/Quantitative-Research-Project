@@ -2,6 +2,8 @@
 
 Six paper-inspired strategy studies and a final statistical-arbitrage portfolio, with bundled market data and reproducible research outputs. Each notebook contains its own implementation, assumptions, diagnostics, and references.
 
+**This is an academic research project, not a deployment-ready trading strategy or live trading system.** It studies historical signals, factor behavior, portfolio construction, and sensitivity to modeling assumptions. Several central experiments require short positions whose historical availability and execution feasibility have not been established, especially in Liu's extended universe. The reported returns, account profits, and Monte Carlo outcomes should be read within that research scope.
+
 **Follow this order: prepare the data if needed → run all six research-paper notebooks → run the final portfolio notebook.** The bundled inputs let you begin with the research notebooks without downloading data again. If you need to acquire or refresh data, complete that step before running any research notebook.
 
 The final portfolio fits capital allocations among seven previously nominated variants using the Backtest histories, freezes those allocations, and starts a fresh 100,000-USDT account at the Validation boundary with a 20-bps trading fee. Earlier validation performance informed those nominations, so the results are **historical development evidence**. The portfolio notebook includes funded execution, allocation comparisons, explicit cost scenarios, factor regressions, a BTC hedge, chronological walk-forward analysis, and Monte Carlo return-path simulations.
@@ -102,13 +104,36 @@ VALIDATION_START, VALIDATION_END = "2025-01-01", "2026-09-17"
 
 The evaluation contains 1,460 backtest days and 625 validation days, approximately a 70/30 chronological split. September 17 is the last completed date in the bundled Binance snapshot. The CMC files include later observations; analyses explicitly slice them to the common endpoint. Signal warm-up stays within the declared evaluation calendar according to each notebook's documented account convention.
 
+## Research scope and short-selling assumptions
+
+The notebooks evaluate trading rules as research hypotheses. **Having historical spot prices for a coin does not establish that the simulated short position could have been opened, maintained, or closed at the required dates and sizes.** The data do not provide a complete historical record of eligible borrowing instruments, available inventory, collateral requirements, borrow recalls, funding, or margin liquidations. The extended-universe Liu results therefore describe conditional long-short factor performance, rather than demonstrate an executable portfolio across all eligible coins.
+
+The direction of exposure depends on the experiment:
+
+- **Donchian:** the final portfolio's five-coin breakout sleeves are long-only; the research notebook also tests long-short variants.
+- **Moving-average rules:** the Grobys study holds long positions or cash.
+- **Hubrich momentum:** the signed momentum factors can hold shorts, while the benchmark-plus-momentum overlays floor negative weights at zero and are long-only.
+- **Liu factors, pairs trading, and volume-conditioned reversal:** the central experiments require long and short positions. Nonnegative allocations to these sleeves do not make the final coin-level portfolio long-only; the BTC hedge can also introduce a short position.
+
+Long-only variants avoid the need to borrow coins for short sales, but their simulations still depend on the stated signal timing, fills, liquidity, costs, and data-selection assumptions. For the long-short experiments, the baseline includes the stated trading fees without establishing historical financing feasibility. The final notebook's **5% annual short-borrowing charge is a fixed simulation assumption**, not an observed series of historical lending rates or evidence that every requested short was available. Adding this charge and slippage does not model inventory shortages, recalls, collateral constraints, liquidation, or size-dependent market impact. A live implementation would require separate instrument-by-instrument and date-by-date feasibility checks and a rerun under those constraints.
+
+### Why test Liu's extended universe?
+
+The fixed 30-coin CMC panel provides a common starting point for the companion studies, but it restricts the cross-section and uses a retrospectively selected basket. The [Liu notebook](Common_Risk_Factors_Liu_et_al.ipynb) also tests a broader historical Binance USDT universe to ask whether the paper-inspired **size, nominal-price, momentum, and trading-activity effects persist among a wider set of coins, including smaller coins**. The comparison also asks whether a wider universe reveals patterns absent from the fixed basket and whether broader diversification changes market exposure. These are research questions, not a decision to expand a live trading universe.
+
+Both variants use market-cap weighting within their long and short baskets and a **$1 million minimum market cap**, alongside the declared price, signal, and identity checks. The extended experiment uses historical CMC identity matches and preceding-Sunday cap snapshots with Binance USDT prices. Its downloaded catalogue contains exchange-pair records rather than that many distinct eligible coins; the eligible set changes at each rebalance. Price and market-cap eligibility are **data-selection rules, not shortability screens**.
+
+This is the project's own later-sample application and universe comparison. It is not an exact replication of Liu's original sample or a clean isolation of universe size: the fixed panel and extended panel also differ in price source, quote currency, and cap-observation frequency. The notebook documents departures from the paper, and historical provider revisions, cohort coverage, exchange-selection effects, and the fixed basket's selection/survivorship bias remain limitations. The broader universe does not, by itself, establish survivorship-free coverage or live tradability.
+
 ## Saved results: strategies, portfolios, and uncertainty
 
 The results below summarize the final notebook's saved outputs. **Money made means simulated net profit in USDT**, with each account starting from **100,000 USDT**. Unless otherwise stated, performance covers **Validation: January 1, 2025–September 17, 2026 (625 days)**. Sharpe, volatility, and CAGR use 365-day annualization. Maximum drawdown is the largest peak-to-trough account decline, shown as a negative percentage. Returns and profits already include the stated costs.
 
-### Strongest standalone strategy
+### Highest Validation Sharpe among the standalone research candidates
 
 **Liu extended / 3w**, the three-week momentum strategy in the extended Binance cap-matched universe, has the highest Validation net Sharpe among the seven funded standalone candidates rebuilt in the final notebook: **1.050**. It earns **56,640.19 USDT** on the simulated 100,000-USDT account, ends at **156,640.19 USDT**, returns **56.64%**, and has a **−24.40%** maximum drawdown. Its annualized return (CAGR) is **29.96%**. This ranking describes the saved Validation outcomes; it is not the criterion used to fit the final portfolio allocation.
+
+**That result is conditional on the simulated long and short baskets being feasible.** The baseline does not include historical borrow charges or verify borrow availability for each extended-universe constituent; the result is a research outcome, not a claim that this profit could have been earned in live trading.
 
 | Funded standalone strategy | Net Sharpe | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
 |---|---|---|---|---|---|---|
