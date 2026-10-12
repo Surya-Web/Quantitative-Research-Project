@@ -102,6 +102,83 @@ VALIDATION_START, VALIDATION_END = "2025-01-01", "2026-09-17"
 
 The evaluation contains 1,460 backtest days and 625 validation days, approximately a 70/30 chronological split. September 17 is the last completed date in the bundled Binance snapshot. The CMC files include later observations; analyses explicitly slice them to the common endpoint. Signal warm-up stays within the declared evaluation calendar according to each notebook's documented account convention.
 
+## Saved results: strategies, portfolios, and uncertainty
+
+The results below summarize the final notebook's saved outputs. **Money made means simulated net profit in USDT**, with each account starting from **100,000 USDT**. Unless otherwise stated, performance covers **Validation: January 1, 2025–September 17, 2026 (625 days)**. Sharpe, volatility, and CAGR use 365-day annualization. Maximum drawdown is the largest peak-to-trough account decline, shown as a negative percentage. Returns and profits already include the stated costs.
+
+### Strongest standalone strategy
+
+**Liu extended / 3w**, the three-week momentum strategy in the extended Binance cap-matched universe, has the highest Validation net Sharpe among the seven funded standalone candidates rebuilt in the final notebook: **1.050**. It earns **56,640.19 USDT** on the simulated 100,000-USDT account, ends at **156,640.19 USDT**, returns **56.64%**, and has a **−24.40%** maximum drawdown. Its annualized return (CAGR) is **29.96%**. This ranking describes the saved Validation outcomes; it is not the criterion used to fit the final portfolio allocation.
+
+| Funded standalone strategy | Net Sharpe | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
+|---|---|---|---|---|---|---|
+| Liu 30 / 3w | 0.752 | 31.22% | 17.19% | −26.12% | 31,217.39 | 131,217.39 |
+| **Liu extended / 3w** | **1.050** | **56.64%** | **29.96%** | **−24.40%** | **56,640.19** | **156,640.19** |
+| Donchian B5 / 30d | 0.197 | 2.50% | 1.45% | −14.44% | 2,496.22 | 102,496.22 |
+| Donchian B5 / 60d | 0.147 | 1.65% | 0.96% | −11.31% | 1,649.76 | 101,649.76 |
+| Donchian B5 / 90d | 0.132 | 1.33% | 0.78% | −8.32% | 1,334.62 | 101,334.62 |
+| ETC/VET | 0.511 | 16.78% | 9.48% | −14.65% | 16,779.47 | 116,779.47 |
+| AAVE/XLM | 0.947 | 41.43% | 22.44% | −27.99% | 41,428.78 | 141,428.78 |
+
+These accounts include **20 bps trading fees**. The seven candidates come from three of the six research families. The individual paper notebooks contain their wider parameter grids, benchmarks, and original accounting conventions; the table uses the final notebook's funded accounts for a consistent comparison. Source: [standalone metrics](output/crypto_stat_arb_project_final/standalone/standalone_metrics.csv).
+
+### Final portfolio and allocation comparisons
+
+The **optimized reference** was nominated using allocation-fit-window Sharpe from the Backtest period. Its funded, coin-level account earns **17,082.61 USDT**, with **1.258 Sharpe** and **−6.51% maximum drawdown** after 20 bps trading fees. Its annualized volatility is **7.55%**, Sortino is **1.906**, and trading fees total **12,562.93 USDT**.
+
+**Equal family weights** has the highest observed Validation Sharpe among the five portfolio methods shown below: **1.465**, with **27,401.59 USDT** net profit and **−9.87%** maximum drawdown. It also has the highest Sharpe among these methods under the added slippage-and-borrowing scenario: **0.895**, with **15,542.01 USDT** profit and **−13.53%** maximum drawdown. These are retrospective comparisons; the README does not replace the Backtest-nominated reference with the Validation winner.
+
+| Portfolio method, 20 bps fees | Sharpe | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
+|---|---|---|---|---|---|---|
+| Optimized reference | 1.258 | 17.08% | 9.65% | −6.51% | 17,082.61 | 117,082.61 |
+| Equal strategy weights | 1.410 | 23.57% | 13.16% | −9.09% | 23,572.98 | 123,572.98 |
+| **Equal family weights** | **1.465** | **27.40%** | **15.19%** | **−9.87%** | **27,401.59** | **127,401.59** |
+| Inverse volatility | 1.037 | 13.65% | 7.76% | −7.19% | 13,651.23 | 113,651.23 |
+| Reference with BTC hedge | 1.405 | 18.66% | 10.51% | −6.27% | 18,657.51 | 118,657.51 |
+
+Sources: [funded reference summary](output/crypto_stat_arb_project_final/single_account/portfolio_summary.csv), [all portfolio evaluation metrics](output/crypto_stat_arb_project_final/all_evaluation_metrics.csv), and [allocation selection and weights](output/crypto_stat_arb_project_final/final_selection.json). The selected sleeve-return blend has slightly different accounting from the funded coin-level account; the portfolio figures here consistently use the funded account exports.
+
+### How trading costs change the reference result
+
+The main added-cost scenario retains the **20 bps trading fee**, adds **10 bps slippage per traded notional**, and charges **5% annual borrowing on external net short exposure**. Its simulated reference profit falls to **9,532.97 USDT**, Sharpe falls to **0.743**, and maximum drawdown increases to **−8.02%**.
+
+| Reference cost scenario | Sharpe | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
+|---|---|---|---|---|---|---|
+| 20 bps trading fee | 1.258 | 17.08% | 9.65% | −6.51% | 17,082.61 | 117,082.61 |
+| Trading fee + 10 bps slippage | 0.825 | 10.70% | 6.12% | −7.69% | 10,698.75 | 110,698.75 |
+| Trading fee + slippage + 5% annual short borrowing | 0.743 | 9.53% | 5.46% | −8.02% | 9,532.97 | 109,532.97 |
+
+Source: [cost-scenario results](output/crypto_stat_arb_project_final/additional_costs/cost_comparison.csv). Profit is final capital minus starting capital; the reported fees, slippage, and borrowing are already deducted from account performance.
+
+### Walk-forward results
+
+The separate walk-forward study refits allocations using a **24-month training window before each six-month test fold**. Its aggregate evaluation runs from **January 2, 2023–September 17, 2026 (1,355 days)**, so it covers a different period from the fixed-allocation Validation tables.
+
+The optimized reference returns **41.65%** with **0.821 Sharpe** and **−16.99% maximum drawdown** under the 20 bps baseline. With the added slippage and borrowing, it returns **14.18%**, with **0.350 Sharpe** and **−21.23% maximum drawdown**. Under that added-cost scenario, inverse-volatility allocation has the highest observed walk-forward Sharpe among the four allocation methods, at **0.647**. These results show how the rankings and risks change across evaluation regimes. Source: [walk-forward aggregate metrics](output/crypto_stat_arb_project_final/walk_forward_aggregate_metrics.csv).
+
+### Monte Carlo simulations
+
+The final notebook runs a **circular stationary bootstrap with geometric block lengths**, resampling observed daily net account returns in blocks to retain some short-term dependence. The main experiment uses **25,000 paths per portfolio and cost scenario**, a **625-day simulated horizon**, a **20-day expected block length**, and **100,000 USDT initial capital**. The return series already include scenario costs. A separate sensitivity check uses **5,000 paths** at expected block lengths of **10, 20, and 40 days**.
+
+The table below uses the full **20 bps fee + 10 bps slippage + 5% annual short-borrowing** scenario. The Validation source has 625 observed days; the walk-forward source has 1,355 observed days, from which the experiment also simulates 625-day paths.
+
+| Historical return source and portfolio | Median final capital (USDT) | 5th–95th percentile final capital (USDT) | Paths ending below 100,000 USDT | Paths with drawdown ≥20% | Median maximum drawdown magnitude |
+|---|---|---|---|---|---|
+| Validation / optimized reference | 109,439 | 93,720–128,908 | 17.39% | 0.26% | 7.17% |
+| Validation / reference with BTC hedge | 110,494 | 95,187–129,379 | 13.86% | 0.09% | 6.63% |
+| Walk-forward / optimized reference | 105,636 | 80,886–140,470 | 36.68% | 20.63% | 14.40% |
+
+The reference's median simulated profit is **9,439 USDT** using Validation returns and **5,636 USDT** using walk-forward returns. The broader walk-forward distribution also has a larger frequency of terminal losses and deep drawdowns. These are conditional, retrospective return-path simulations: they do not simulate new asset prices, refit allocations, or repeat candidate selection. The percentile ranges and loss frequencies describe these bootstrap samples rather than forecasts or independent evidence of future profitability.
+
+Sources: [Monte Carlo summary](output/crypto_stat_arb_project_final/monte_carlo/summary.csv), [simulation settings](output/crypto_stat_arb_project_final/monte_carlo/manifest.json), [block-length sensitivity](output/crypto_stat_arb_project_final/monte_carlo/block_length_sensitivity.csv), and [interpretation](output/crypto_stat_arb_project_final/monte_carlo/interpretation.md).
+
+### Explore the saved charts
+
+- [Funded reference performance](output/crypto_stat_arb_project_final/single_account_validation_performance.png) and [allocation comparisons](output/crypto_stat_arb_project_final/portfolio_allocation_validation.png) show account growth and risk across portfolio methods.
+- [Trading-cost comparisons](output/crypto_stat_arb_project_final/additional_trading_costs.png), [BTC hedge](output/crypto_stat_arb_project_final/portfolio_btc_hedge.png), and [walk-forward analysis](output/crypto_stat_arb_project_final/portfolio_walk_forward.png) show execution and evaluation sensitivity.
+- [Monte Carlo fan charts](output/crypto_stat_arb_project_final/portfolio_monte_carlo_fan_charts.png), [outcome distributions](output/crypto_stat_arb_project_final/portfolio_monte_carlo_outcome_distributions.png), and [block-length sensitivity](output/crypto_stat_arb_project_final/portfolio_monte_carlo_block_sensitivity.png) show simulated wealth ranges, losses, and drawdowns.
+- [Sharpe uncertainty](output/crypto_stat_arb_project_final/portfolio_sharpe_uncertainty.png) and [rolling market exposure](output/crypto_stat_arb_project_final/portfolio_rolling_beta.png) provide additional statistical and factor diagnostics.
+
 ## Input files
 
 | Folder | Required content |
