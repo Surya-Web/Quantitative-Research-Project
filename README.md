@@ -129,7 +129,7 @@ This is the project's own later-sample application and universe comparison. It i
 
 ## Saved results: strategies, portfolios, and uncertainty
 
-The results below summarize the final notebook's saved outputs. **Money made means simulated net profit in USDT**, with each account starting from **100,000 USDT**. Unless otherwise stated, performance covers **Validation: January 1, 2025–September 17, 2026 (625 days)**. **Headline Sharpe uses the course convention: daily mean divided by daily sample standard deviation, multiplied by √252**, with zero risk-free return. All strategy notebooks also report √365 Sharpe on the same daily observations; no weekend returns are removed. Volatility, Sortino, CAGR, turnover, borrowing accrual, and linear annual alpha retain their documented 365-day calendar convention. Maximum drawdown is the largest peak-to-trough account decline, shown as a negative percentage. Returns and profits already include the stated costs.
+The results below summarize the final notebook's saved outputs. **Money made means simulated net profit in USDT**, with each account starting from **100,000 USDT**. Unless otherwise stated, performance covers **Validation: January 1, 2025–September 17, 2026 (625 days)**. Sharpe uses arithmetic daily returns, sample standard deviation, and zero risk-free return. Weekend returns remain in the sample. Volatility, Sortino, CAGR, turnover, borrowing accrual, and linear annual alpha retain their documented 365-day calendar convention. Maximum drawdown is the largest peak-to-trough account decline, shown as a negative percentage. Returns and profits already include the stated costs.
 
 ### Highest Validation Sharpe among the standalone research candidates
 
@@ -137,7 +137,7 @@ The results below summarize the final notebook's saved outputs. **Money made mea
 
 **That result is conditional on the simulated long and short baskets being feasible.** The baseline does not include historical borrow charges or verify borrow availability for each extended-universe constituent; the result is a research outcome, not a claim that this profit could have been earned in live trading.
 
-| Funded standalone strategy | Net Sharpe (252) | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
+| Funded standalone strategy | Net Sharpe | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
 |---|---|---|---|---|---|---|
 | Liu 30 / 3w | 0.625 | 31.22% | 17.19% | −26.12% | 31,217.39 | 131,217.39 |
 | **Liu extended / 3w** | **0.872** | **56.64%** | **29.96%** | **−24.40%** | **56,640.19** | **156,640.19** |
@@ -163,7 +163,7 @@ The **optimized reference** was nominated using allocation-fit-window Sharpe fro
 
 **Equal family weights** has the highest observed Validation Sharpe among the five portfolio methods shown below: **1.217**, with **27,401.59 USDT** net profit and **−9.87%** maximum drawdown. These are retrospective comparisons; the README does not replace the Backtest-nominated reference with the Validation winner.
 
-| Portfolio method, 20 bps all-in cost | Sharpe (252) | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
+| Portfolio method, 20 bps all-in cost | Sharpe | Total return | CAGR | Max drawdown | Net profit (USDT) | Final capital (USDT) |
 |---|---|---|---|---|---|---|
 | Optimized reference | 1.045 | 17.08% | 9.65% | −6.51% | 17,082.61 | 117,082.61 |
 | Equal strategy weights | 1.171 | 23.57% | 13.16% | −9.09% | 23,572.98 | 123,572.98 |
@@ -254,7 +254,7 @@ The next research priority is to investigate lower turnover through less frequen
 ## Verification
 
 - All nine notebooks executed successfully; downloaders used their default offline modes.
-- Both Sharpe conventions were reconciled across 24 exported metric tables. The reference HAC t-statistic and 95% interval were independently checked against statsmodels. The selected allocation and baseline daily account match the previous run within floating-point precision.
+- Sharpe values were reconciled against the saved daily return series. The reference HAC t-statistic and 95% interval were independently checked against statsmodels. The selected allocation and baseline daily account match the previous run within floating-point precision.
 - All 136 code cells passed syntax checks. Spelling, Markdown tables, local notebook links, comments, and chart presentation were reviewed; the documented Donchian sizing cap now matches the existing 100% code setting.
 - Saved notebook outputs contain no Python/pandas warnings, errors, or machine-specific filesystem addresses.
 - The reporting update preserves the trading rules and bundled market-data inputs. Performance exports and charts include the revised reporting conventions.

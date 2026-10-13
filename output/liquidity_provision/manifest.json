@@ -81,7 +81,7 @@
     "pandas": "3.0.3",
     "statsmodels": "0.14.6"
   },
-  "notebook_source_sha256": "ea991dd58b6fa6548264474e44ad80db0a997338770298cbad8ecf03c32de16a",
+  "notebook_source_sha256": "1cca80c04aa660eedaee4f7f09a7c0e4fce7d68ae905ceb853214273f3892b7a",
   "figure_names": [
     "strategy_train_validation_sharpe",
     "backtest_performance",

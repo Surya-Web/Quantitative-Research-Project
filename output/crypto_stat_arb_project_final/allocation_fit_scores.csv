@@ -1,18 +1,18 @@
 ,Allocation-fit Sharpe
 All seven / measured correlations,0.6666998068468587
-All seven / independence assumption,0.5499582557226684
-All seven / signed mathematical bound,0.6890662462730981
+All seven / independence assumption,0.5499582557226682
+All seven / signed mathematical bound,0.6890662462730982
 Liu 30 / 3w + Donchian B5 / 30d + both pairs / correlated,0.5551181984057086
 Liu 30 / 3w + Donchian B5 / 30d + both pairs / independent,0.5533438794173265
 Liu 30 / 3w + Donchian B5 / 60d + both pairs / correlated,0.6123055190300061
-Liu 30 / 3w + Donchian B5 / 60d + both pairs / independent,0.6094169006808577
+Liu 30 / 3w + Donchian B5 / 60d + both pairs / independent,0.6094169006808579
 Liu 30 / 3w + Donchian B5 / 90d + both pairs / correlated,0.6411532775512794
-Liu 30 / 3w + Donchian B5 / 90d + both pairs / independent,0.6381021756001726
+Liu 30 / 3w + Donchian B5 / 90d + both pairs / independent,0.6381021756001727
 Liu extended / 3w + Donchian B5 / 30d + both pairs / correlated,0.5851694576942428
 Liu extended / 3w + Donchian B5 / 30d + both pairs / independent,0.5823609461724514
-Liu extended / 3w + Donchian B5 / 60d + both pairs / correlated,0.6376127628787938
-Liu extended / 3w + Donchian B5 / 60d + both pairs / independent,0.6330200449868472
+Liu extended / 3w + Donchian B5 / 60d + both pairs / correlated,0.6376127628787939
+Liu extended / 3w + Donchian B5 / 60d + both pairs / independent,0.6330200449868473
 Liu extended / 3w + Donchian B5 / 90d + both pairs / correlated,0.6666998068468587
-Liu extended / 3w + Donchian B5 / 90d + both pairs / independent,0.6619458675508636
-Both pairs / correlated,0.456728446079867
+Liu extended / 3w + Donchian B5 / 90d + both pairs / independent,0.6619458675508635
+Both pairs / correlated,0.4567284460798668
 Both pairs / independent,0.45668975230390213

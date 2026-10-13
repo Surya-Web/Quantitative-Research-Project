@@ -2,12 +2,12 @@
   "model": "All seven / measured correlations",
   "weights": {
     "Liu 30 / 3w": 0.0,
-    "Liu extended / 3w": 0.07971798727179137,
+    "Liu extended / 3w": 0.07971798727179134,
     "Donchian B5 / 30d": 0.0,
     "Donchian B5 / 60d": 0.0,
     "Donchian B5 / 90d": 0.5428793381744136,
-    "ETC/VET": 0.196690871058743,
-    "AAVE/XLM": 0.18071180349505192
+    "ETC/VET": 0.19669087105874297,
+    "AAVE/XLM": 0.18071180349505195
   },
   "criterion": "Highest positive allocation-fit-window Sharpe among executable nonnegative combinations",
   "validation_screen_used": false,
@@ -18,10 +18,10 @@
   "allocation_fit_sharpe": 0.6666998068468587,
   "signal_history_start": "2021-01-01",
   "retention_threshold": 0.5,
-  "retention": 1.5764245666862382,
+  "retention": 1.5764245666862386,
   "tie_rule": "Declared order for Backtest Sharpes within 1e-6",
   "backtest_sharpe": 0.6666998068468588,
-  "validation_sharpe": 1.0510019541183582,
+  "validation_sharpe": 1.0510019541183584,
   "candidate_count": 17,
   "eligible_training_count": 16,
   "gross_exposure": "Sum of sleeve gross exposures before coin-level offsets",

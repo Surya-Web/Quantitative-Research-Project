@@ -5,10 +5,10 @@
   "slippage_rate": 0.0,
   "model": "All seven / measured correlations",
   "frozen_strategy_weights": {
-    "Liu extended / 3w": 0.07971798727179137,
+    "Liu extended / 3w": 0.07971798727179134,
     "Donchian B5 / 90d": 0.5428793381744136,
-    "ETC/VET": 0.196690871058743,
-    "AAVE/XLM": 0.18071180349505192
+    "ETC/VET": 0.19669087105874297,
+    "AAVE/XLM": 0.18071180349505195
   },
   "target_source": "Native-strategy closing coin weights; following-day P&L",
   "execution": "Current-close targets, current-close fees, end-of-day NAV; coin netting before costs",

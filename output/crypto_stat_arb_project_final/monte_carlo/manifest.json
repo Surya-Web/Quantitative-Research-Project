@@ -5,8 +5,6 @@
   "horizon_days": 625,
   "initial_capital_usdt": 100000.0,
   "annualization_days": 365,
-  "headline_sharpe_days": 252,
-  "comparison_sharpe_days": 365,
   "cash_daily_return": 0.0,
   "batch_size": 100,
   "fan_sample_paths": 2000,
@@ -86,7 +84,7 @@
           "Reference with BTC hedge"
         ]
       ],
-      "return_csv_sha256": "6c49c6d6d196590c656841ecf8acbdd0522b17f3360c20cb0eee91939ebff9a8"
+      "return_csv_sha256": "94c1dc3bd4e8f50f320517a5c38cd6852d28f8a804ae31c375256e97d949dc3c"
     },
     {
       "source": "Walk-forward retrospective",
@@ -144,7 +142,7 @@
           "Inverse volatility"
         ]
       ],
-      "return_csv_sha256": "99901c131aa4bccc7a4ba00509abc4581764c62737918db6e491925d562d8868"
+      "return_csv_sha256": "3b2e4fbe711416b2acf0842d752761a35f77ba6898903627bb26fb402b1de41a"
     }
   ],
   "costs": "Net account returns already include the scenario costs; no second deduction",

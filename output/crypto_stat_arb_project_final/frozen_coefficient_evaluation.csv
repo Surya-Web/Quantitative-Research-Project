@@ -1,35 +1,35 @@
 model,method,period,assumption_max_sharpe,realized_sharpe,annual_volatility,days
-All seven / measured correlations,correlated,Backtest,0.6666998068468586,0.6666998068468588,0.08265515266278801,1460
-All seven / measured correlations,correlated,Validation,0.6666998068468586,1.0510019541183582,0.07549218513677072,625
-All seven / independence assumption,independent,Backtest,0.7846865278372414,0.5499582557226684,0.08110309641639181,1460
-All seven / independence assumption,independent,Validation,0.7846865278372414,0.6800628173730232,0.07378020014752557,625
-All seven / signed mathematical bound,signed,Backtest,0.6890662462730981,0.6890662462730981,0.04596694987810513,1460
-All seven / signed mathematical bound,signed,Validation,0.6890662462730981,1.1278092242278854,0.04027851909400839,625
-Liu 30 / 3w + Donchian B5 / 30d + both pairs / correlated,correlated,Backtest,0.5551181984057085,0.5551181984057084,0.09201086793573887,1460
-Liu 30 / 3w + Donchian B5 / 30d + both pairs / correlated,correlated,Validation,0.5551181984057085,0.7945265981301615,0.09793316352265966,625
-Liu 30 / 3w + Donchian B5 / 30d + both pairs / independent,independent,Backtest,0.5331767319952331,0.5533438794173267,0.09167965450082786,1460
-Liu 30 / 3w + Donchian B5 / 30d + both pairs / independent,independent,Validation,0.5331767319952331,0.8036026206942074,0.09618333658604199,625
-Liu 30 / 3w + Donchian B5 / 60d + both pairs / correlated,correlated,Backtest,0.6123055190300061,0.6123055190300061,0.0877750466633496,1460
-Liu 30 / 3w + Donchian B5 / 60d + both pairs / correlated,correlated,Validation,0.6123055190300061,0.7823070590941573,0.08930143166532607,625
+All seven / measured correlations,correlated,Backtest,0.6666998068468587,0.6666998068468588,0.08265515266278801,1460
+All seven / measured correlations,correlated,Validation,0.6666998068468587,1.0510019541183584,0.07549218513677072,625
+All seven / independence assumption,independent,Backtest,0.7846865278372412,0.5499582557226683,0.08110309641639178,1460
+All seven / independence assumption,independent,Validation,0.7846865278372412,0.6800628173730231,0.07378020014752557,625
+All seven / signed mathematical bound,signed,Backtest,0.689066246273098,0.6890662462730983,0.045966949878105116,1460
+All seven / signed mathematical bound,signed,Validation,0.689066246273098,1.1278092242278854,0.040278519094008376,625
+Liu 30 / 3w + Donchian B5 / 30d + both pairs / correlated,correlated,Backtest,0.5551181984057086,0.5551181984057084,0.09201086793573887,1460
+Liu 30 / 3w + Donchian B5 / 30d + both pairs / correlated,correlated,Validation,0.5551181984057086,0.7945265981301617,0.09793316352265964,625
+Liu 30 / 3w + Donchian B5 / 30d + both pairs / independent,independent,Backtest,0.533176731995233,0.5533438794173264,0.09167965450082788,1460
+Liu 30 / 3w + Donchian B5 / 30d + both pairs / independent,independent,Validation,0.533176731995233,0.8036026206942072,0.09618333658604199,625
+Liu 30 / 3w + Donchian B5 / 60d + both pairs / correlated,correlated,Backtest,0.6123055190300059,0.612305519030006,0.0877750466633496,1460
+Liu 30 / 3w + Donchian B5 / 60d + both pairs / correlated,correlated,Validation,0.6123055190300059,0.7823070590941572,0.08930143166532607,625
 Liu 30 / 3w + Donchian B5 / 60d + both pairs / independent,independent,Backtest,0.5772793633335951,0.6094169006808579,0.08766789230359878,1460
-Liu 30 / 3w + Donchian B5 / 60d + both pairs / independent,independent,Validation,0.5772793633335951,0.7850586888304606,0.08761370153142663,625
-Liu 30 / 3w + Donchian B5 / 90d + both pairs / correlated,correlated,Backtest,0.6411532775512793,0.6411532775512795,0.08337291918079932,1460
-Liu 30 / 3w + Donchian B5 / 90d + both pairs / correlated,correlated,Validation,0.6411532775512793,0.8130951656882521,0.07916840308731789,625
-Liu 30 / 3w + Donchian B5 / 90d + both pairs / independent,independent,Backtest,0.6012970190064272,0.6381021756001726,0.08320408163209563,1460
-Liu 30 / 3w + Donchian B5 / 90d + both pairs / independent,independent,Validation,0.6012970190064272,0.8127687429088101,0.07720782287379263,625
+Liu 30 / 3w + Donchian B5 / 60d + both pairs / independent,independent,Validation,0.5772793633335951,0.7850586888304608,0.08761370153142664,625
+Liu 30 / 3w + Donchian B5 / 90d + both pairs / correlated,correlated,Backtest,0.6411532775512793,0.6411532775512794,0.08337291918079932,1460
+Liu 30 / 3w + Donchian B5 / 90d + both pairs / correlated,correlated,Validation,0.6411532775512793,0.8130951656882524,0.07916840308731789,625
+Liu 30 / 3w + Donchian B5 / 90d + both pairs / independent,independent,Backtest,0.6012970190064272,0.6381021756001728,0.0832040816320956,1460
+Liu 30 / 3w + Donchian B5 / 90d + both pairs / independent,independent,Validation,0.6012970190064272,0.8127687429088098,0.07720782287379263,625
 Liu extended / 3w + Donchian B5 / 30d + both pairs / correlated,correlated,Backtest,0.5851694576942428,0.5851694576942428,0.09198664480072725,1460
-Liu extended / 3w + Donchian B5 / 30d + both pairs / correlated,correlated,Validation,0.5851694576942428,1.0272635978866131,0.09423521354828365,625
-Liu extended / 3w + Donchian B5 / 30d + both pairs / independent,independent,Backtest,0.5684669120497067,0.5823609461724515,0.09100709434045721,1460
-Liu extended / 3w + Donchian B5 / 30d + both pairs / independent,independent,Validation,0.5684669120497067,1.029645971726502,0.09212440316854478,625
+Liu extended / 3w + Donchian B5 / 30d + both pairs / correlated,correlated,Validation,0.5851694576942428,1.027263597886613,0.09423521354828365,625
+Liu extended / 3w + Donchian B5 / 30d + both pairs / independent,independent,Backtest,0.5684669120497066,0.5823609461724514,0.09100709434045721,1460
+Liu extended / 3w + Donchian B5 / 30d + both pairs / independent,independent,Validation,0.5684669120497066,1.029645971726502,0.09212440316854478,625
 Liu extended / 3w + Donchian B5 / 60d + both pairs / correlated,correlated,Backtest,0.6376127628787941,0.6376127628787939,0.08719263090560266,1460
 Liu extended / 3w + Donchian B5 / 60d + both pairs / correlated,correlated,Validation,0.6376127628787941,1.0003479122832817,0.08586979469551478,625
-Liu extended / 3w + Donchian B5 / 60d + both pairs / independent,independent,Backtest,0.6100234961745764,0.6330200449868469,0.08733299201037181,1460
-Liu extended / 3w + Donchian B5 / 60d + both pairs / independent,independent,Validation,0.6100234961745764,1.0138094296380002,0.0841524830447061,625
-Liu extended / 3w + Donchian B5 / 90d + both pairs / correlated,correlated,Backtest,0.6666998068468586,0.6666998068468588,0.08265515266278801,1460
-Liu extended / 3w + Donchian B5 / 90d + both pairs / correlated,correlated,Validation,0.6666998068468586,1.0510019541183582,0.07549218513677072,625
-Liu extended / 3w + Donchian B5 / 90d + both pairs / independent,independent,Backtest,0.6327995793458052,0.6619458675508635,0.08282694108899517,1460
-Liu extended / 3w + Donchian B5 / 90d + both pairs / independent,independent,Validation,0.6327995793458052,1.067523103138811,0.07343802368665214,625
-Both pairs / correlated,correlated,Backtest,0.45672844607986696,0.456728446079867,0.16886681280735458,1460
-Both pairs / correlated,correlated,Validation,0.45672844607986696,0.8156720858341072,0.17007679573232523,625
-Both pairs / independent,independent,Backtest,0.4446584944533438,0.45668975230390213,0.16909367145439239,1460
-Both pairs / independent,independent,Validation,0.4446584944533438,0.8115665464437665,0.170194769256884,625
+Liu extended / 3w + Donchian B5 / 60d + both pairs / independent,independent,Backtest,0.6100234961745763,0.6330200449868473,0.08733299201037181,1460
+Liu extended / 3w + Donchian B5 / 60d + both pairs / independent,independent,Validation,0.6100234961745763,1.013809429638,0.08415248304470611,625
+Liu extended / 3w + Donchian B5 / 90d + both pairs / correlated,correlated,Backtest,0.6666998068468585,0.6666998068468588,0.08265515266278801,1460
+Liu extended / 3w + Donchian B5 / 90d + both pairs / correlated,correlated,Validation,0.6666998068468585,1.0510019541183584,0.07549218513677072,625
+Liu extended / 3w + Donchian B5 / 90d + both pairs / independent,independent,Backtest,0.6327995793458052,0.6619458675508637,0.08282694108899517,1460
+Liu extended / 3w + Donchian B5 / 90d + both pairs / independent,independent,Validation,0.6327995793458052,1.0675231031388113,0.07343802368665214,625
+Both pairs / correlated,correlated,Backtest,0.45672844607986685,0.4567284460798668,0.16886681280735455,1460
+Both pairs / correlated,correlated,Validation,0.45672844607986685,0.8156720858341069,0.1700767957323252,625
+Both pairs / independent,independent,Backtest,0.4446584944533437,0.456689752303902,0.16909367145439239,1460
+Both pairs / independent,independent,Validation,0.4446584944533437,0.8115665464437665,0.170194769256884,625
